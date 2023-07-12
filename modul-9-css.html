@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Modul 9</title>
+	<meta charset="utf-8">
+	<style>
+		body {font-family: Verdana, sans-serif; font-size:0.8em;}
+		header, section, article, footer, div.city, div.country
+		{border:1px solid grey; margin-bottom:15px; padding:8px;background-color:white;}
+		header,footer {color:white;background-color:#444;margin-bottom:5px;}
+		section {background-color:#ddd;}
+		nav ul {margin:0; padding:0;}
+		nav ul li {display:inline; margin:5px;}
+		code {font-size: 14px; color: red;}
+	</style>
+</head>
+
+<body>
+	<header>
+  		<h1 align="right">Modul 9 | CSS3 (1)</h1>
+	</header>
+<nav>
+	<ul>
+  		<li><a href="#border">Border</a></li>
+  		<li><a href="#color">Color</a></li>
+  		<li><a href="#shadow">Shadow</a></li>
+  		<li><a href="#video">Materi Video</a></li>
+  		<li><a href="../daftar-modul.html">Daftar Modul</a></li>
+  		<li><a href="../../sub-materi/teori.html">Kembali</a></li>
+	</ul>
+</nav>
+
+<article>
+
+	<section>
+		<h2 id="border">B O R D E R</h2>
+		<div class="city">
+			<h2>Pendahuluan</h2>
+			<p>Pada CSS3 terdapat dua fitur baru yaitu properti <code>border-image</code> dan <code>border-radius</code>. border-image digunakan untuk membuat gambar border custom, dan border-radius digunakan untuk memberikan gaya border yang bulat.</p>
+		</div>
+
+		<div class="city">
+			<h2>Border Radius</h2>
+			<p>Dengan properti <code>border-radius</code> Kita bisa menggunakannya untuk membuat border atau perbatasan yang bulat. Agar Kita bisa melihat effek visual <code>border-radius</code>, sangat disarankan agar memberikan background-color atau border pada elemennya, ini tidak wajib, ini supaya Kita bisa melihat effek perbatasan yang bulat.</p>
+			<p>Perhatikan contoh berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/bor-css3-1.png">
+				</figure>
+				<p>Jadi, inilah cara kerjanya:</p>
+				<p>Jika properti border-radius memiliki empat nilai:</p>
+				<ul>
+					<li>border-radius: 5px 10px 15px 20px;</li>
+					<li>border-radius atas 5px</li>
+					<li>border-radius kanan 10px</li>
+					<li>border-radius bawah 15px</li>
+					<li>border-radius kiri 20px</li>
+				</ul>
+				<p>Jika properti border-radius memiliki tiga nilai:</p>
+				<ul>
+					<li>border-radius: 5px 15px 20px;</li>
+					<li>border-radius atas 5px</li>
+					<li>border-radius kanan dan kiri 15px</li>
+					<li>border-radius bawah 20px</li>
+				</ul>
+				<p>Jika properti border-radius memiliki dua nilai:</p>
+				<ul>
+					<li>border-radius: 5px 20px;</li>
+					<li>border-radius atas dan bawah 5px</li>
+					<li>border-radius kanan dan kiri 20px</li>
+				</ul>
+				<p>Jika properti border-radius memiliki satu nilai:</p>
+				<ul>
+					<li>border-radius: 5px</li>
+					<li>keempat sudut border-radius 5px</li>
+				</ul>
+			</details>
+			<h3>Border-radius individu</h3>
+			<p>Kita bisa mengatur border radius lebih spesifik atau mendetail dengan menggunakan istilah border individu. Yang dimaksud dengan border individu sendiri, Kita bisa mengatur menentukan setiap sudut untuk memberikan border atau perbatasan. Berikut list properti border radius individu:</p>
+			<ul>
+				<li>border-top-left-radius ( atas – kiri )</li>
+				<li>border-top-right-radius ( atas – kanan )</li>
+				<li>border-bottom-right-radius ( bawah – kanan )</li>
+				<li>border-bottom-left-radius ( bawah kiri )</li>
+			</ul>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/bor-css3-2.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Border Image</h2>
+			<p>Kita juga bisa memanfaatkan gambar untuk dijadikan border.</p>
+
+			<h3>Border-image-source</h3>
+			<p>Dengan properti <code>border-image-source</code> Kita bisa menggunakannya untuk menentukan jalur gambar yang akan digunakan sebagai perbatasan.</p>
+			<p>Perhatikan contoh berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/bor-css3-3.png">
+				</figure>
+				<p><strong>Informasi</strong>: jika Kita menggunakan properti border-image-source maka Kita juga harus menentukan properti border supaya bekerja.</p>
+			</details>
+
+			<h3>Border-image-slice</h3>
+			<p>Dengan properti <code>border-image-slice</code> Kita bisa menggunakannya untuk menentukan cara mengiris gambar border atau perbatasan.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/bor-css3-4.png">
+				</figure>
+			</details>
+
+			<h3>Border-image-width</h3>
+			<p>Dengan properti <code>border-image-width</code> Kita bisa menggunakannya untuk menentukan lebar gambar border atau perbatasan.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/bor-css3-5.png">
+				</figure>
+			</details>
+
+			<h3>Border-image-outset</h3>
+			<p>Dengan properti <code>border-image-outset</code> Kita bisa menggunakannya untuk menentukan jumlah dimana area gambar perbatasan melampaui kotak perbatasan.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/bor-css3-6.png">
+				</figure>
+			</details>
+
+			<h3>Border-image-repeat</h3>
+			<p>Dengan properti <code>border-image-repeat</code> Kita bisa menggunakannya untuk menentukan apakah gambar perbatasan harus diulang (repeat), dibulatkan (round) atau diregangkan (stretch).</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/bor-css3-7.png">
+				</figure>
+			</details>
+
+			<h3>Border Image Shorthand</h3>
+			<p>Dengan border image shorthand Kita bisa mempersingkat sebuah kode. Shorthand sendiri yang berarti “steno” atau menulis cepat. Dengan cara ini dimungkinkan juga untuk menentukan semua properti border-image-* dalam satu properti tunggal. Untuk menggunakan border image shorthand Kita cukup menggunakan properti border-image. Dengan begitu Kita tidak lagi menulis kode yang panjang seperti contoh-contoh diatas. Properti border-image shorthand berlaku untuk border-image dibawah ini:</p>
+			<ul>
+				<li><code>border-image-source</code></li>
+				<li><code>border-image-slice</code></li>
+				<li><code>border-image-width</code></li>
+				<li><code>border-image-outset</code></li>
+				<li><code>border-image-repeat</code></li>
+			</ul>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/bor-css3-8.png">
+				</figure>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="color">C O L O R</h2>
+		<div class="country">
+			<h2>Pendahuluan</h2>
+			<p>CSS3 menambahkan beberapa jenis warna baru yang bisa Kita gunakan untuk pengaturan nilai warna pada elemen. Jenis warna baru pada css3 yaitu: rgba, hsl dan hsla. </p>
+		</div>
+
+		<div class="country">
+			<h2>Nilai Warna RGBA</h2>
+			<p>Nilai warna RGBA kepanjangan dari (Red, Green, Blue, Alpha). Model warna RGBA perpanjangan dari model warna RGB yang ditambahkan alpha channel, alpha sendiri menentukan opacity atau tingkat transparan pada warna. Parameter alpha adalah angka antara 0,0 (sepenuhnya transparan) dan 1,0 (tidak transparan sama sekali).</p>
+			<details>
+				<figure>
+					<img src="gambar/clr-css3-1.png">
+				</figure>
+			</details>	
+		</div>
+
+		<div class="country">
+			<h2>Nilai Warna HSL</h2>
+			<p>Nilai warna HSL kepanjangan dari (Hue, Saturation, Lightness). <b>Hue</b> adalah gelar pada roda warna dari 0 hingga 360. 0 berwarna merah atau red, 120 berwarna hijau atau green, dan 240 berwarna biru atau blue. <b>Saturation</b> adalah nilai persentase, 0% berarti warna abu-abu atau grey, dan 100% adalah warna penuh. <b>Lightness</b> juga persentase, 0% hitam atau black, 50% tidak terang atau gelap, 100% putih atau white</p>
+			<details>
+				<figure>
+					<img src="gambar/clr-css3-2.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Nilai Warna HSLA</h2>
+			<p>Nilai warna HSLA kepanjangan dari (Hue, Saturation, Lightness, Alpha). Model warna HSLA perpanjangan dari model warna HSL yang ditambahkan alpha channel, alpha sendiri menentukan opacity atau tingkat transparan pada warna. Parameter alpha adalah angka antara 0,0 (sepenuhnya transparan) dan 1,0 (tidak transparan sama sekali).</p>
+			<details>
+				<figure>
+					<img src="gambar/clr-css3-3.png">
+				</figure>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="shadow">SHADOW</h2>
+		<div class="country">
+			<h2>Pendahuluan</h2>
+			<p>Pada CSS3 terdapat fitur baru yaitu shadow, yang berarti bayangan. Sesuai dengan namanya shadow digunakan untuk membuat bayangan pada elemen HTML.</p>
+		</div>
+
+		<div class="country">
+			<h2>Box Shadow</h2>
+			<p>Dengan properti box-shadow Kita bisa menggunakannya untuk membuat efek bayangan pada box seperti elemen &ltdiv> atau elemen yang lainnya. Dalam box-shadow Kita bisa menentukan arah horizontal, vertikal, blur, spread dan warna. Sebagai contoh: box-shadow: 10px 20px 5px 15px blue; Yang berarti Kita memberikan nilai:</p>
+			<ul>
+				<li>10px – menentukan arah horizontal dari kiri ke kanan</li>
+				<li>20px – menentukan arah vertikal dari atas ke bawah</li>
+				<li>5px – menentukan tingkat transparansi atau blur</li>
+				<li>15px – menentukan penyebaran ukuran box shadow</li>
+				<li>blue – memberikan warna pada box seperti blue atau biru</li>
+			</ul>
+			<p>Kita bisa menentukan arah sebaliknya dengan memberikannya nilai negatif. Akan tetapi nilai negatif tidak didukung pada sebagian besar browser lama. Dalam penggunaan yang paling sederhana, Kita bisa menentukan arah horizontal dan arah vertikal tanpa memberikan nilai blur dan warna. Berikut contoh box-shadow hanya menentukan arah horizontal dan vertikal:</p>
+			<details>
+				<figure>
+					<img src="gambar/sha-css3-1.png">
+				</figure>
+				<p><b>Informasi</b>: Jika Kita tidak memberikan warna atau color pada box-shadow, maka secara default akan diberi warna hitam atau black.</p>
+				<p>Berikut contoh box-shadow ditambah warna:</p>
+				<figure>
+					<img src="gambar/sha-css3-2.png">
+				</figure>
+				<p>Berikut contoh box-shadow ditambah blur:</p>
+				<figure>
+					<img src="gambar/sha-css3-3.png">
+				</figure>
+				<p>Berikut contoh box-shadow ditambah spread:</p>
+				<figure>
+					<img src="gambar/sha-css3-4.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Text Shadow</h2>
+			<p>Dengan properti text-shadow Kita bisa menggunakannya untuk membuat efek bayangan pada text atau tulisan. Dalam text-shadow Kita bisa menentukan arah horizontal, vertikal, blur dan warna. Sebagai contoh: text-shadow: 2px 3px 5px yellow; Yang berarti Kita memberikan nilai:</p>
+			<ul>
+				<li>2px – menentukan arah horizontal dari kiri ke kanan</li>
+				<li>3px – menentukan arah vertikal dari atas ke bawah</li>
+				<li>5px – menentukan tingkat transparansi atau blur</li>
+				<li>yellow – memberikan warna pada text seperti yellow atau kuning</li>
+			</ul>
+			<p>Kita bisa menentukan arah sebaliknya dengan memberikannya nilai negatif. Akan tetapi nilai negatif tidak didukung pada sebagian besar browser lama. Dalam penggunaan yang paling sederhana, Kita bisa menentukan arah horizontal dan arah vertikal tanpa memberikan nilai blur dan warna. Berikut contoh text-shadow hanya menentukan arah horizontal dan vertikal:</p>
+			<details>
+				<figure>
+					<img src="gambar/sha-css3-5.png">
+				</figure>
+				<p><b>Informasi</b>: Jika Kita tidak memberikan warna atau color pada box-shadow, maka secara default akan diberi warna hitam atau black.</p>
+				<p>Berikut contoh text-shadow ditambah warna:</p>
+				<figure>
+					<img src="gambar/sha-css3-6.png">
+				</figure>
+				<p>Berikut contoh text-shadow ditambah blur:</p>
+				<figure>
+					<img src="gambar/sha-css3-7.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Multiple Shadow</h2>
+			<p>Kita juga bisa menambahkan multi shadow atau menambahkan beberapa bayangan pada text atau elemen. Untuk memisahkan satu sama lain menggunakan koma.</p>
+			<details>
+				<figure>
+					<img src="gambar/sha-css3-8.png">
+				</figure>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="video">Materi Video</h2>
+		<div class="country">
+			<figure>
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/EpXrmIdGalU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			</figure>
+		</div>
+	</section>
+</article>
+
+<footer>
+	<p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

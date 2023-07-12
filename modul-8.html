@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Modul 8</title>
+	<meta charset="utf-8">
+	<style>
+		body {font-family: Verdana, sans-serif; font-size:0.8em;}
+		header, section, article, footer, div.city, div.country
+		{border:1px solid grey; margin-bottom:15px; padding:8px;background-color:white;}
+		header,footer {color:white;background-color:#444;margin-bottom:5px;}
+		section {background-color:#ddd;}
+		nav ul {margin:0; padding:0;}
+		nav ul li {display:inline; margin:5px;}
+	</style>
+</head>
+
+<body>
+	<header>
+  		<h1 align="right">Modul 8 | List dan Tabel</h1>
+	</header>
+<nav>
+	<ul>
+  		<li><a href="#list">List</a></li>
+  		<li><a href="#tabel">Tabel</a></li>
+  		<li><a href="#video">Materi Video</a></li>
+  		<li><a href="../daftar-modul.html">Daftar Modul</a></li>
+  		<li><a href="../../sub-materi/teori.html">Kembali</a></li>
+	</ul>
+</nav>
+
+<article>
+
+	<section>
+		<h2 id="list">LIST</h2>
+		<div class="city">
+			<h2>Pendahuluan</h2>
+			<p>List merupakan cara penulisan yang sering digunakan untuk membuat daftar berurutan. Terdapat 3 macam list yang ada di HTML yaitu <b>ordered list</b>, <b>unordered list</b> dan <b>description list</b>. Cara membuat list di html tentunya berbeda-beda sesuai jenisnya. Ketiga macam list HTML tersebut juga memiliki tampilan dan fungsi yang berbeda.Perbedaan penulisan ketiga jenis list ini terdapat pada pembuka dan penutupnya saja. Sedangkan untuk membuat item pada ordered dan unordered list menggunakan elemen yang sama yaitu <strong>&ltli>..&lt/li></strong>.</p>
+		</div>
+
+		<div class="city">
+			<h2>Ordered List (&ltol>)</h2>
+			<p>Ordered list adalah jenis list berurutan yang ditampilkan dengan menggunakan angka atau nomor atau huruf. Ordered list biasa digunakan untuk menampilkan daftar item yang membutuhkan penomoran misalnya daftar pemenang lomba, daftar urutan ranking kelas dan urutan-urutan lain yang membutuhkan nomor. Tag <b>&ltol></b> digunakan untuk membuat list yang berjenis ordered list.</p>
+
+			<h3>Cara membuat Ordered List</h3>
+			<figure>
+				<img src="gambar/list-1.png">
+			</figure>
+			<p>Mari kita lihat contoh berikut ini.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/list-2.png">
+  			  </figure>
+  			</details>
+
+  			<h3>Atribut TAG &ltol></h3>
+  			<p>Elemen &ltol> memiliki 3 atribut khusus yang dapat digunakan yaitu atribut type, atribut start dan atribut reversed.</p>
+  			<h4>Atribut Type</h4>
+  			<p>Atribut type digunakan untuk mengubah jenis pengurutannya. Misalnya ingin mengubah dari angka (1,2,3,…) menjadi huruf (a,b,c,…). Terdapat 5 macam value yang dapat kita gunakan yaitu: </p>
+  			<ul>
+				<li>type=”1″	Pengurutan dengan angka</li>
+				<li>type=”a”	Pengurutan dengan huruf kecil (a,b,c,…)</li>
+				<li>type=”A”	Pengurutan dengan huruf besar/kapital (A,B,C,…)</li>
+				<li>type=”i”	Pengurutan dengan angka romawi kecil (i,ii,iii,…)</li>
+				<li>type=”I”	Pengurutan dengan angka romawi besar (I,II,III,…)</li>
+  			</ul>
+  			<p>Mari kita lihat contoh berikut ini.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/list-3.png">
+  			  </figure>
+  			</details>
+  			<h4>Atribut Start</h4>
+  			<p>Atribut start digunakan untuk mengubah atau menentukan angka awal pengurutan. Jika tanpa menggunakan atribut ini pengurutan akan dimulai dari angka 1 namun jika kita ingin dimulai dari angka 5 maka kita perlu memasukkannya pada value atribut start menjadi <b>&ltol start=”5″></b>.</p>
+  			<p>Mari kita lihat contoh berikut ini.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/list-4.png">
+  			  </figure>
+  			</details>
+  			<h4>Atribut reversed</h4>
+  			<p>Atribut reversed digunakan untuk mengubah urutan dari yang terbesar menuju yang terkecil. Atribut ini adalah atribut tanpa value jadi hanya perlu menambahkan reversed pada tag pembuka ol.</p>
+  			 <p>Mari kita lihat contoh berikut ini.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/list-5.png">
+  			  </figure>
+  			</details>
+		</div>
+
+		<div class="city">
+			<h2>Unordered List (&ltul>)</h2>
+			<p>Unordered list adalah jenis list yang tidak berurutan yang ditampilkan dengan menggunakan simbol. Unordered list digunakan untuk menampilkan daftar list yang tidak memerlukan angka pengurutan misalnya daftar OS komputer, daftar aplikasi editor html dan lain-lain.</p>
+
+			<h3>Cara membuat Unordered List</h3>
+			<figure>
+				<img src="gambar/list-6.png">
+			</figure>
+			<p>Mari kita lihat contoh berikut ini.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/list-7.png">
+  			  </figure>
+  			</details>
+
+  			<h3>Atribut TAG &ltul></h3>
+  			<p>Seperti dijelaskan di atas bahwa fungsi ul pada HTML adalah untuk membuat unordered list. Pada versi HTML5 Elemen &ltul> tidak memiliki atribut khusus. Sebenarnya terdapat 2 atribut khusus yang populer untuk elemen &ltul> namun sudah tidak disupport oleh HTML5 sehingga kita tidak perlu mempelajarinya. Untuk sekedar pengetahuan, atribut tersebut adalah atribut type dan atribut compact.</p>
+  			<ul>
+				<li>Atribut type digunakan untuk merubah jenis simbol yang secara default adalah disc, dapat kita ubah menjadi circle dan square.</li>
+				<li>Atribut compact digunakan untuk menampilkan ukuran lebih kecil untuk list.</li>
+			</ul>
+		</div>
+
+		<div class="city">
+			<h2>Description List</h2>
+			<p>Description list adalah jenis list yang digunakan untuk menampilkan istilah dan penjelasannya seperti kamus. Description list jarang digunakan jika dibandingkan 2 jenis list sebelumnya. Cara penulisan description list sedikit berbeda dari jenis list sebelumnya. Jika kita hanya perlu 2 tag pada ordered dan unordered list, maka untuk menulis description list kita membutuhkan 3 tag HTML yaitu tag <b>&ltdl></b>, tag <b>&ltdt></b> dan tag <b>&ltdd></b>.Tag <b>&ltdl></b> digunakan untuk mendefinisikan bahwa kode tersebut adalah description list. Tag <b>&ltdt></b> digunakan untuk mengapit istilah (term). Tag <b>&ltdd></b> digunakan untuk mengapit penjelasannya (description).</p>
+			<figure>
+				<img src="gambar/list-8.png">
+			</figure>
+			<p>Mari kita lihat contoh berikut ini.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/list-9.png">
+  			  </figure>
+  			</details>
+		</div>
+
+		<div class="city">
+			<h2>Nested List</h2>
+			<p>Nested list adalah list di dalam list. Misalnya saat kita menulis list OS komputer yang terdiri dari Linux, Windows dan Mac. Linux dalamnya terdapat list lagi yaitu Ubuntu, Debian, RedHat, dll. Pada contoh seperti inilah kita perlu membuat nested list.</p>
+
+			<h3>Cara membuat Nested List</h3>
+			<p>Untuk membuat nested list di HTML, list tambahan harus diletakkan di dalam tag &ltli>. List tersebut ditulis lengkap dari tag &ltol> atau &ltul> di dalam tag &ltli>.</p>
+			<p>Mari kita lihat contoh berikut ini.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/list-10.png">
+  			  </figure>
+  			</details>
+		</div>
+
+	</section>
+
+	<section>
+	<h2 id="tabel">TABEL</h2>
+		<div class="country">
+			<h2>Pendahuluan</h2>
+			<p>Salah satu cara atau format menampilkan informasi dalam web adalah dengan tabel. Tabel terdiri dari 4 unsur utama:</p>
+			<ol type="1">
+				<li>Baris</li>
+				<li>Kolom</li>
+				<li>Sel</li>
+				<li>Border</li>
+			</ol>
+			<figure>
+				<img src="gambar/tabel-1.png">
+			</figure>
+			<p>Baris adalah bagian tabel yang mendatar. Pada contoh gambar di atas, tabel tersebut terdiri dari 5 baris. Kolom adalah bagian tabel yang vertikal (atas ke bawah). Pada contoh gambar di atas, tabel tersebut terdiri dari 6 kolom. Sel adalah kotak-kotak yang ada pada tabel. Pada gambar di atas, tabel tersebut memiliki 30 sel. Border adalah garis yang membentuk tabel.</p>
+		</div>
+
+		<div class="country">
+			<h2>Tag untuk Membuat Tabel di HTML</h2>
+			<p>Ada beberapa tag yang harus diingat untuk membuat tabel di HTML:</p>
+			<ol type="1">
+				<li>Tag &lttable> untuk membungkus tabelnya</li>
+				<li>Tag &ltthead> untuk membungkus bagian kepala tabel</li>
+				<li>Tag &lttbody> untuk membungkus bagian body dari tabel</li>
+				<li>Tag &lttr> (tabel row) untuk membuat </li>
+				<li>Tag &lttd> (table data) untuk membuat sel</li>
+				<li>Tag &ltth> (table head) untuk membuat judul pada header</li>
+			</ol>
+			<p>Tag yang paling penting untuk diingat adalah tag &lttable>, &lttr>, dan &lttd>. Sementara tag yang lain adalah tambahan (opsional), boleh digunakan boleh tidak.</p>
+			<p>Mari kita lihat contohnya:</p>
+			<details>
+			<figure>
+				<img src="gambar/tabel-2.png">
+			</figure>
+			</details>
+			<p>Kok tidak ada garisnya? Iya, karena kita tidak menambahkan atribut border pada tabelnya.Agar Tabelnya memiliki garis, silahkan tambahkan atribut border="1" di dalam tag &lttable>.Sehingga akan menjadi seperti ini:</p>
+			<details>
+				<figure>
+					<img src="gambar/tabel-3.png">
+				</figure>
+			</details>	
+		</div>
+
+		<div class="country">
+			<h2>Mengatur Jarak Sel dengan Cellpadding</h2>
+			<p>Atribut cellpadding adalah atribut untuk mengatur jarak teks dengan garis di dalam sel. Atribut ini dapat kita berikan kepada tag &lttable>.</p>
+			<p>Contoh:</p>
+			<details>
+			<figure>
+				<img src="gambar/tabel-4.png">
+			</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Menambahkan Warna pada Sel dan Baris</h2>
+			<p>Untuk menambahkan warna pada sel dan baris, kita bisa menambahkan atribut bgcolor di dalam tag &lttd> (untuk sel) atau &lttr> (untuk baris).</p>
+			<p>Contoh:</p>
+			<details>
+				<figure>
+					<img src="gambar/tabel-5.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Menggabungkkan Sel Tabel</h2>
+			<p>Atribut yang digunakan untuk menggabungkan sel tabel adalah rowspan dan colspan:</p>
+			<ul>
+				<li><b>rowspan</b> untuk menggabungkan baris;</li>
+				<li><b>colspan</b> untuk menggabungkan kolom.</li>
+			</ul>
+			<p>Atribut ini bisa kita berikan kepada tag &lttd> atau &ltth>.</p>
+				<figure>
+					<img src="gambar/tabel-6.png">
+				</figure>
+			<p>Contoh :</p>
+			<details>
+				<figure>
+					<img src="gambar/tabel-7.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Menyisipkan Elemen yang Lain ke dalam Sel</h2>
+			<p>Di salam sel &lttd> dan &ltth>, kita bisa menyisipkan elemen HTML yang lain, seperti gambar, link, video, list, dsb.</p>
+			<p>Contoh:</p>
+			<details>
+				<figure>
+					<img src="gambar/tabel-8.png">
+				</figure>
+			</details>
+		</div>
+
+	</section>
+
+	<section>
+	<a name="video">&nbsp;</a>
+	<h2>Materi Video</h2>
+		<div class="country">
+			<figure>
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/QEcgowmTZho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			</figure>
+		</div>
+	</section>
+</article>
+
+<footer>
+	<p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

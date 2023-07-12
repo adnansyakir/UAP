@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Modul 8</title>
+	<meta charset="utf-8">
+	<style>
+		body {font-family: Verdana, sans-serif; font-size:0.8em;}
+		header, section, article, footer, div.city, div.country
+		{border:1px solid grey; margin-bottom:15px; padding:8px;background-color:white;}
+		header,footer {color:white;background-color:#444;margin-bottom:5px;}
+		section {background-color:#ddd;}
+		nav ul {margin:0; padding:0;}
+		nav ul li {display:inline; margin:5px;}
+		code {font-size: 14px; color: red;}
+	</style>
+</head>
+
+<body>
+	<header>
+  		<h1 align="right">Modul 8 | Position dan Float</h1>
+	</header>
+<nav>
+	<ul>
+  		<li><a href="#pos">Position</a></li>
+  		<li><a href="#flo">Float</a></li>
+  		<li><a href="#video">Materi Video</a></li>
+  		<li><a href="../daftar-modul.html">Daftar Modul</a></li>
+  		<li><a href="../../sub-materi/teori.html">Kembali</a></li>
+	</ul>
+</nav>
+
+<article>
+
+	<section>
+		<h2 id="pos">POSITION</h2>
+		<div class="city">
+			<h2>Pendahuluan</h2>
+			<p>Pada CSS sendiri Kita bisa mengatur letak posisi setiap elemen, ini sangat berguna untuk desain tata letak yang baik. Didalam CSS ada beberapa metode yang bisa Kita gunakan untuk menentukan posisi elemen dengan properti position. Pada properti position Ada lima nilai yang bisa Kita gunakan:</p>
+			<ul>
+				<li>Static</li>
+				<li>Relative</li>
+				<li>Absolute</li>
+				<li>Fixed</li>
+				<li>Sticky</li>
+			</ul>
+			<p>Agar berfungsi Kita juga perlu mengatur arah posisi yang lebih spesifik dengan properti: <code>top</code>, <code>right</code>, <code>bottom</code> dan <code>left</code>, mereka juga bekerja secara berbeda tergantung pada nilai posisi.</p>
+		</div>
+
+		<div class="city">
+			<h2>Posisi Static</h2>
+			<p>Elemen HTML secara default diposisikan static. Posisi static tidak diposisikan dengan cara khusus apa pun, melainkan diposisikan sesuai dengan aliran normal halaman. Elemen posisi static tidak bisa dipengaruhi oleh properti <code>top</code>, <code>right</code>, <code>bottom</code> dan <code>left</code>.</p>
+			<p>Perhatikan contoh berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/pos-css-1.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Posisi Relative</h2>
+			<p>Elemen dengan posisi relative diposisikan relative terhadap posisi normalnya. Dengan posisi relative Kita bisa mengatur letak posisi dengan properti <code>top</code>, <code>right</code>, <code>bottom</code> dan <code>left</code>. Elemen yang diposisikan relative dapat tumpang tindih dengan elemen lain, dan menjaga ruang yang awalnya disediakan dalam aliran normal.</p>
+			<p>Perhatikan contoh berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/pos-css-2.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Posisi Absolute</h2>
+			<p>Elemen dengan posisi absolute diposisikan sepenuhnya keluar dari aliran normalnya. Dengan posisi absolute Kita bisa mengatur letak posisi dengan properti <code>top</code>, <code>right</code>, <code>bottom</code> dan <code>left</code>. Elemen yang diposisikan absolute dapat tumpang tindih dengan elemen lain, dan tidak menjaga ruang yang awalnya disediakan dalam aliran normal.</p>
+			<p>Jika posisi absolute dibungkus dengan posisi relative, maka akan mengikuti posisi kordinat dari pembungkusnya (relative). Namun jika posisi absolute tidak memiliki pembungkus yang mempunyai posisi relative, maka ia menggunakan elemen &ltbody> sebagai kordinatnya.</p>
+			<p>Contoh posisi absolute yang dibungkus dengan posisi relative:</p>
+			<details>
+				<figure>
+					<img src="gambar/pos-css-3.png">
+				</figure>
+			</details>
+			<p>Contoh posisi absolute yang <strong>TIDAK</strong> dibungkus dengan posisi relative:</p>
+			<details>
+				<figure>
+					<img src="gambar/pos-css-4.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Posisi Fixed</h2>
+			<p>Elemen dengan posisi fixed digunakan untuk memberikan posisi tetap bahkan jika halaman tersebut digulir. Dengan posisi fixed Kita bisa mengatur letak posisi dengan properti <code>top</code>, <code>right</code>, <code>bottom</code> dan <code>left</code>. Elemen yang diposisikan fixed dapat tumpang tindih dengan elemen lain, dan tidak menjaga ruang yang awalnya disediakan dalam aliran normal.</p>
+			<p>Perhatikan contoh berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/pos-css-5.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Posisi Sticky</h2>
+			<p>Elemen dengan posisi sticky digunakan untuk toggle posisi relative dan posisi fixed. Ini diposisikan relatif sampai posisi offset yang diberikan bertemu di viewport – kemudian “sticky” di tempatnya. Dengan posisi sticky Kita bisa mengatur letak posisi dengan properti <code>top</code>, <code>right</code>, <code>bottom</code> dan <code>left</code>. Elemen yang diposisikan sticky dapat tumpang tindih dengan elemen lain, dan tidak menjaga ruang yang awalnya disediakan dalam aliran normal.</p>
+			<p>Perhatikan contoh berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/pos-css-6.png">
+				</figure>
+				<p>Jangan lupa menentukan properti position, jika tidak sticky tidak akan berjalan.</p>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Posisi elemen tumpang tindih</h2>
+			<p>Ketika elemen diposisikan, maka mereka dapat tumpang tindih dengan elemen yang lainnya. Dengan properti <code>z-index</code> Kita bisa mengatur untuk menentukan elemen mana yang akan ditempatkan dibelakang dan elemen mana yang akan ditempatkan didepan.</p>
+			<p>Perhatikan contoh berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/pos-css-7.png">
+				</figure>
+				<p>Nilai properti <code>z-index</code> mendukung nilai positif atau negatif. Elemen dengan urutan tumpukan lebih besar selalu didepan elemen dengan urutan tumpukan lebih rendah. Jika dua elemen yang diposisikan tumpang tindih tanpa properti <code>z-index</code> yang ditentukan, elemen yang diposisikan terakhir dalam kode HTML akan ditampilkan di atas.</p>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="flo">FLOAT</h2>
+		<div class="country">
+			<h2>Pendahuluan</h2>
+			<p>Properti <code>float</code> pada CSS digunakan untuk mengatur elemen agar bisa “float atau mengapung” ke kiri atau ke kanan. Css float sangat berguna untuk mengatur design tata letak pada halaman web. Elemen yang mempunyai <code>position: absolute;</code> tidak akan bekerja jika diberi style dengan properti <code>float</code>, karena elemen “mengapung” sudah dikeluarkan dari aliran normal. Jika beberapa elemen “float atau mengapung” ditempatkan bersebelahan, maka elemen yang lainnya akan ikut “mengapung” bersebelahan mengisi ruang horizontal yang tersisa. Jika tidak ada cukup ruang untuk “mengapung”, itu akan digeser ke bawah sampai tidak ada lagi elemen “mengapung” tersisa. Kemungkinan nilai untuk properti ini adalah:</p>
+			<ul>
+				<li>left – mengapung ke kiri</li>
+				<li>right – mengapung ke kanan</li>
+				<li>none – Unsur tidak mengapung. Ini adalah default</li>
+				<li>inherit – Unsur mewarisi nilai mengapung dari induknya</li>
+			</ul>
+			<p>Berikut gambaran CSS float :</p>
+			<figure>
+				<img src="gambar/flo-css-1.png">
+			</figure>
+		</div>
+
+		<div class="country">
+			<h2>Float Right</h2>
+			<p>Dengan porperti float Kita bisa menggunakannya untuk elemen agar “ngefloat atau mengapung” ke arah kanan dengan nilai right.</p>
+			<details>
+				<figure>
+					<img src="gambar/flo-css-2.png">
+				</figure>
+			</details>	
+		</div>
+
+		<div class="country">
+			<h2>Float Left</h2>
+			<p>Dengan porperti float Kita bisa menggunakannya untuk elemen agar “ngefloat atau mengapung” ke arah kanan dengan nilai left.</p>
+			<details>
+				<figure>
+					<img src="gambar/flo-css-3.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Mematikan Properti Float</h2>
+			<p>Jika beberapa elemen “float atau mengapung” ditempatkan bersebelahan, maka elemen yang lainnya akan ikut “mengapung” bersebelahan mengisi ruang horizontal yang tersisa. Dengan properti clear Kita bisa mengatur menspesifikasikan elemen yang ikut mengapung apakah diperbolehkan atau tidak diperbolehkan (matikan). Kemungkinan nilai properti  clear adalah:</p>
+			<ul>
+				<li>none – Memungkinkan elemen mengapung di kedua sisi. Ini adalah default</li>
+				<li>left – Tidak diperbolehkan elemen mengapung ke sisi kiri</li>
+				<li>right – Tidak diperbolehkan elemen mengapung ke sisi kanan</li>
+				<li>both – Tidak diperbolehkan elemen mengapung di kedua sisi kiri atau sisi kanan</li>
+				<li>inherit – Unsur mewarisi nilai dari elemen induknya</li>
+			</ul>
+			<details>
+				<figure>
+					<img src="gambar/flo-css-4.png">
+				</figure>
+				<p>Pada contoh diatas box yang bernomor 6 tidak mengapung ke sisi kiri mengikuti elemen yang lainnya, dikarenakan sudah diberi style clear: left;</p>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Clearfix</h2>
+			<p>Jika Kita menggunakan properti float dan didalamnya ada elemen yang lebih tinggi dari elemen pembungkusnya. Maka Kita akan mendapatkan masalah, dimana elemen itu akan ke luar dari wadah.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/flo-css-5.png">
+				</figure>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="video">Materi Video</h2>
+		<div class="country">
+			<figure>
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/NOs9J1K-ZwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			</figure>
+		</div>
+	</section>
+</article>
+
+<footer>
+	<p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

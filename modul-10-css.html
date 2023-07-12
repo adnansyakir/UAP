@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Modul 10</title>
+	<meta charset="utf-8">
+	<style>
+		body {font-family: Verdana, sans-serif; font-size:0.8em;}
+		header, section, article, footer, div.city, div.country
+		{border:1px solid grey; margin-bottom:15px; padding:8px;background-color:white;}
+		header,footer {color:white;background-color:#444;margin-bottom:5px;}
+		section {background-color:#ddd;}
+		nav ul {margin:0; padding:0;}
+		nav ul li {display:inline; margin:5px;}
+		code {font-size: 14px; color: red;}
+	</style>
+</head>
+
+<body>
+	<header>
+  		<h1 align="right">Modul 10 | CSS3 (2)</h1>
+	</header>
+<nav>
+	<ul>
+  		<li><a href="#trans">Transform</a></li>
+  		<li><a href="#anim">Animation</a></li>
+  		<li><a href="#video">Materi Video</a></li>
+  		<li><a href="../daftar-modul.html">Daftar Modul</a></li>
+  		<li><a href="../../sub-materi/teori.html">Kembali</a></li>
+	</ul>
+</nav>
+
+<article>
+
+	<section>
+		<h2 id="trans">TRANSFORM</h2>
+		<div class="city">
+			<h2>Pendahuluan</h2>
+			<p>Transform adalah cara mengolah suatu gambar, misal ada rotate, mengatur posisi, mengubah ukuran, dll. Semua proses itu dinamakan transform.</p>
+			<p>Transform terdapat 2 jenis yaitu :</p>
+			<ul>
+				<li>2D Transform</li>
+				<li>3D Transform</li>
+			</ul>
+		</div>
+
+		<div class="city">
+			<h2>2D Transform</h2>
+			<p>Property transform yang sering digunakan, yaitu:</p>
+				<ul>
+					<li><code>translate()</code></li>
+					<li><code>rotate()</code></li>
+					<li><code>scale()</code></li>
+					<li><code>skew()</code></li>
+					<li><code>matrix()</code></li>	
+				</ul>
+
+			<h3>Translate</h3>
+			<p>Dengan fungsi translate() Kita bisa memindahkan elemen dari posisi saat ini ke posisi baru di sepanjang sumbu X dan sumbu Y. translate(X, Y). X berarti mengatur posisi untuk horizontal dan Y mengatur posisi untuk vertikal. Simak Ilustrasi berikut</p>
+				<figure>
+					<img src="gambar/translate.png">
+				</figure>
+			<p>Perhatikan contoh berikut ini:</p>
+			<details>
+				<figure>
+					<img src="gambar/trans-css3-1.png">
+				</figure>
+			</details>		
+
+			<h3>Rotate</h3>
+			<p>Fungsi rotate() digunakan untuk memutar sebuah obyek berdasarkan satu sumbu titik tengah obyek. Syntaxnya adalah <code>rotate(a)</code> dimana a adalah besar derajat putaran.</p>
+				<figure>
+					<img src="gambar/rotate.png">
+				</figure>
+			<p>Perhatikan contoh berikut ini:</p>
+			<details>
+				<figure>
+					<img src="gambar/trans-css3-2.png">
+				</figure>
+			</details>	
+
+			<h3>Scale</h3>
+			<p>Fungsi scale() digunakan untuk mengubah ukuran element. Dengan syntax scale(a) dimana a adalah besar kelipatan ukurannya. Misal 1.5 artinya ukurannya 1,5 kali lebih besar. Ada juga scaleX() digunakan untuk menambah ukuran panjang element, sedangkan scaleY() untuk tinggi element.</p>
+				<figure>
+					<img src="gambar/scale.png">
+				</figure>
+			<p>Perhatikan contoh berikut ini:</p>
+			<details>
+				<figure>
+					<img src="gambar/trans-css3-3.png">
+				</figure>
+			</details>
+
+			<h3>Skew</h3>
+			<p>Ini hampir mirip dengan scale(), bedanya skew() bisa diatur sumbu x dan y. Syntax skew(ax, ay), dimana ax adalah sumbu x dan ay adalah sumbu y. Jika ay tidak ditulis alias cuma skew(ax) maka ay dianggap nol. Ada juga skewX() untuk mengatur kemiringan berdasar sumbu x (horizontal). Sedangkan skewY() mengatur kemiringan berdasar sumbu y (vertikal)</p>
+				<figure>
+					<img src="gambar/skew.png">
+				</figure>
+			<p>Perhatikan contoh berikut ini:</p>
+			<details>
+				<figure>
+					<img src="gambar/trans-css3-4.png">
+				</figure>
+			</details>
+
+			<h3>Matrix</h3>
+			<p>Dengan fungsi matrix() Kita bisa menggabungkan semua 2D dari berbagai fungsi menjadi satu metode. Matrix() sendiri mengambil enam parameter, dan mengandung fungsi matematika yang memungkinkan Kita untuk rotate, scale, translate, dan skew.</p>
+			<p>Perhatikan contoh berikut ini:</p>
+			<details>
+				<figure>
+					<img src="gambar/trans-css3-5.png">
+				</figure>
+			</details>	
+		</div>
+
+		<div class="city">
+			<h2>3D Transform</h2>
+			<p>Property transform yang sering digunakan, yaitu:</p>
+				<ul>
+					<li><code>rotateX()</code></li>
+					<li><code>rotateY()</code></li>
+					<li><code>rotateZ()</code></li>
+					<li><code>scale3d()</code></li>	
+				</ul>
+
+			<h3>RotateX ()</h3>
+			<p>Pertama adalah berdasarkan sumbu-X artinya horizontal. Dengan syntax: <code>rotateX(derajat);</code></p>
+			<p>Perhatikan contoh berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-rotatex.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hasil-rotateX.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+
+			<h3>RotateY ()</h3>
+			<p>Digunakan untuk membuat efek rotasi berdasrkan sumbu Y atau vertikal. Dengan syntax <code>rotateY(derajat);</code></p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-rotateY.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hasil-rotateY.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+
+			<h3>RotateZ ()</h3>
+			<p>Terakhir adalah rotateZ() untuk membuat rotate berdasarkan sumbu Z.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-rotateZ.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hasil-rotateZ.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+
+			<h3>Scale3d ()</h3>
+			<p>Kemudian adalah scale3d() digunakan untuk mengubah ukuran element. Ditulis dengan syntax <code>scale3d(sx, sy, sz)</code>.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-scale3d.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hasil-scale3d.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="anim">ANIMATION</h2>
+		<div class="country">
+			<h2>Pendahuluan</h2>
+			<p>Pada CSS3 terdapat fitur baru yaitu shadow, yang berarti bayangan. Sesuai dengan namanya shadow digunakan untuk membuat bayangan pada elemen HTML.</p>
+		</div>
+
+		<div class="country">
+			<h2>@keyframes</h2>
+			<p>Logika animasi itu adalah pergantian dari obyek A ke obyek B dalam rentan waktu tertentu. Makannya ada konsep 30fps, dll. Artinya ada perpindahan 30 gambar dalam 1 detik. Sama, dengan <code>@keyframes</code> kita bisa mendefinisikan perpindahan tersebut.</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-keyframe.jpg">
+				</figure>
+				<p>Keterangan:</p>
+				<ul>
+					<li>buat @keyframes dengan nama contoh-animasi dengan value warna dari from adalah #5340ff menuju to #212121</li>
+					<li>Kemudian panggil contoh-animasi ke dalam div dengan property animation-name</li>
+					<li>animation-duration: 2s; untuk menentukan durasi perpindahan dari from ke to selama 2 detik.</li>
+					<li>from itu dari 0% sedangkan to 100%</li>
+				</ul>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hasil-keyframe.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Durasi dan Delay</h2>
+			<p>Untuk mengatur durasi digunakan properti animation-duration: xs; dimana x adalah durasinya. Sedangkan untuk mengatur delay gunakan animation-delay: xs; dimana x adalah delay waktunya.</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-delay.jpg">
+				</figure>
+				<p>Keterangan:</p>
+				<ul>
+					<li>Total durasi animasi adalah 4s didefinisikan dengan animation-duration</li>
+					<li>Delay animasi adalah 2s didefinisikan dengan animation-delay</li>
+					<li>Pada @keyframes ditentukan spot tempat dari 0% – 100%. % bisa dikustom sesuka hati.</li>
+				</ul>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hasil-delay.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Mengatur Direction (Arah)</h2>
+			<p>Untuk mengatur arah pergerakan animasi, menggunakan properti animation-direction, dengan value:</p>
+			<ul>
+				<li><code>normal</code>, animasi akan diputar normal (forwards) ke depan seperti yang didefinisikan awal</li>
+				<li><code>reverse</code>, animasi akan diputar kebalikannya, yaitu dari arah belakang ke depan</li>
+				<li><code>alternate</code>, animasi diputar ke depan kemudian ke belakang</li>
+				<li><code>alternate-reverse</code>, animasi diputar ke belakang kemudian ke depan</li>
+			</ul>
+			<details>
+				<figure>
+					<img src="gambar/cth-direction.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hasil-direction.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Jenis Pergerakan Speed Curve</h2>
+			<p>Secara umum, jenis pergerakan obyek didefinisikan dengan properti <code>animation-timing-function</code>. Valuenya: <code>ease, linear, ease-in, ease-out, ease-in-out.</code></p>
+			<details>
+				<figure>
+					<img src="gambar/cth-speedcurve.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hasil-speedcurve.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Pengulangan</h2>
+			<p>Untuk mengatur berapa kali animasi akan diputar, kita menggunakan <code>animation-iteration-count</code>. Jika 3x diputar maka ditulis: <code>animation-iteration-count:3;</code></p>
+			<p>Jika diputar unlimited maka valuenya <code>animation-iteration-count: infinite;</code></p>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="video">Materi Video</h2>
+		<div class="country">
+			<figure>
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/yU4WC9oqmxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			</figure>
+		</div>
+	</section>
+</article>
+
+<footer>
+	<p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Modul 5</title>
+	<meta charset="utf-8">
+	<style>
+		body {font-family: Verdana, sans-serif; font-size:0.8em;}
+		header, section, article, footer, div.city, div.country
+		{border:1px solid grey; margin-bottom:15px; padding:8px;background-color:white;}
+		header,footer {color:white;background-color:#444;margin-bottom:5px;}
+		section {background-color:#ddd;}
+		nav ul {margin:0; padding:0;}
+		nav ul li {display:inline; margin:5px;}
+	</style>
+</head>
+
+<body>
+	<header>
+  		<h1 align="right">Modul 5 | List dan Image</h1>
+	</header>
+<nav>
+	<ul>
+  		<li><a href="#list">List</a></li>
+  		<li><a href="#img">Image</a></li>
+  		<li><a href="#video">Materi Video</a></li>
+  		<li><a href="../daftar-modul.html">Daftar Modul</a></li>
+  		<li><a href="../../sub-materi/teori.html">Kembali</a></li>
+	</ul>
+</nav>
+
+<article>
+
+	<section>
+		<h2 id="list">L I S T</h2>
+		<div class="city">
+			<h2>Apa itu List</h2>
+			<p>List adalah salah satu elemen HTML yang digunakan untuk mengelompokkan informasi terkait sehingga menjadi kait mengait satu sama lain dan memudahkan untuk dibaca. Dalam pengembangan web modern, list adalah elemen yang sering digunakan untuk design navigasi.</p>
+			<p>List bagus dari sudut pandang struktural karena membantu membuat dokumen yang terstruktur dengan baik dan lebih mudah diakses. List juga mempunyai nilai semantik didalamnya.</p>
+		</div>
+
+		<div class="city">
+			<h2>Jenis List</h2>
+			<p>Didalam HTML terdapat tiga jenis gaya list yang berbeda dan mempunyai nilai makna semantik didalamnya. Berikut tiga jenis list yang bisa Kita pilih:</p>
+			<ul>
+			<li>Unordered list (&ltul>) – list item ditandai dengan peluru</li>
+			<li>Ordered list (&ltol>) – list item ditandai dengan nomor </li>
+			<li>Definition list (&ltdl>) – list item dengan deskripsi setiap list</li>
+			</ul>
+			<p>Selain tiga jenis list yang tersedia dalam HTML, ada beberapa cara untuk mengatur gaya list ini dengan CSS. Misalnya, kita dapat memilih jenis penanda yang akan digunakan pada list. Penanda bisa berbentuk persegi, bulat, numerik, abjad, atau mungkin tidak ada. Bukan hanya itu, Kita juga bisa menentukan apakah list harus ditampilkan secara vertikal atau horizontal. Semua pilihan ini memainkan peran penting dalam design halaman web.</p>
+		</div>
+
+		<div class="city">
+			<h2>Mengatur Style List</h2>
+			<p>Secara default, list dalam ordered list ditandai sebagai nomor ( 1, 2, 3 dll. ), sedangkan list dalam unordered list ditandai sebagai peluru. Namun, dengan properti list-style-type Kita bisa mengatur atau mengganti penanda type listnya. Kemungkinan nilai untuk properti ini adalah: circle, square, upper-roman, lower-alpha dll. Perhatikan Contoh Berikut ini :</p>
+			<details>
+			<figure>
+				<img src="gambar/list-css-1.png">
+			</figure>
+			<p>Kita bisa menggunakan properti list-style-type untuk menghapus angka atau peluru bawaan &ltol> atau &ltul>.</p>
+			<figure>
+				<img src="gambar/list-css-2.png">
+			</figure>
+			<p>Perhatikan bahwa list juga memiliki margin dan padding default. Untuk menghapusnya gunakan margin:0 dan padding:0 ke &ltul> atau &ltol>.</p>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Membuat Menu Navigasi Horizontal</h2>
+			<p>Kita juga bisa membuat menu navigasi secara horizontal hanya dengan memainkan CSS. Perhatikan Contoh Berikut :</p>
+			<details>
+			<figure>
+				<img src="gambar/list-css-3.png">
+			</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Membuat Menu Navigasi Vertikal</h2>
+			<p>Kita juga bisa membuat menu navigasi secara vertikal hanya dengan memainkan CSS. Perhatikan Contoh Berikut :</p>
+			<details>
+			<figure>
+				<img src="gambar/list-css-4.png">
+			</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Mengatur Posisi List</h2>
+			<p>Kita bisa mengatur posisi list dengan properti list-style-position, dengan properti ini Kita bisa mengatur posisi apakah akan muncul didalam atau diluar kotak blok utama item. Kemungkinan nilai untuk properti ini adalah: inside atau outside. Secara default posisi list adalah outside.
+			<ul>
+			<li>List-style-position: outside; berarti bahwa poin-poin akan berada diluar item list. </li>
+			<li>List-style-position: inside; berarti bahwa poin-poin akan berada didalam list item.</li>
+			</ul>
+			<p>Perhatikan Contoh Berikut ini :</p>
+			<details>
+			<figure>
+				<img src="gambar/list-css-5.png">
+			</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Mengatur Penanda dengan Gambar</h2>
+			<p>Pada contoh diatas Kita bisa mengatur penanda dengan properti list-style-type. Kita juga bisa mengatur penanda menggunakan gambar dengan properti list-style-image. Perhatikan Contoh Berikut :</p>
+			<details>
+			<figure>
+				<img src="gambar/list-css-6.png">
+			</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>List Shorthand</h2>
+			<p>Dengan list shorthand Anda bisa mempersingkat sebuah kode. Shorthand sendiri yang berarti “steno” atau menulis cepat. Dengan cara ini dimungkinkan juga untuk menentukan semua properti list dalam satu properti tunggal. Untuk menggunakan list shorthand Anda cukup menggunakan properti list-style. Dengan begitu Anda tidak lagi menulis kode yang panjang.</p>
+			<p>Perhatikan Contoh Berikut ini :</p>
+			<details>
+			<figure>
+				<img src="gambar/list-css-7.png">
+			</figure>
+			<p>Bila menggunakan properti steno, urutan nilai properti adalah:</p>
+			<ul>
+				<li><code style="font-size: 14px; color: red;">list-style-type </code></li>
+				<li><code style="font-size: 14px; color: red;">list-style-position</code> </li>
+				<li><code style="font-size: 14px; color: red;">list-style-image</code></li>
+			</ul> 
+			<p>Jika salah satu dari nilai properti di atas hilang, nilai default untuk properti yang hilang akan dimasukkan, jika ada.</p>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="img">I M A G E</h2>
+		<div class="country">
+			<h2>Pendahuluan</h2>
+			<p>Gambar adalah konten yang sangat penting dalam suatu web. Kalau web cuma teks aja tentu akan sangat membosankan. Dengan CSS, kita bisa mengatur style dari gambar tersebut. Yang umum diatur tampilannya menggunakan CSS adalah:</p>
+			<ul>
+				<li><code style="font-size: 14px; color: red;">Width</code>, yaitu lebar gambar</li>
+				<li><code style="font-size: 14px; color: red;">Height</code>, yaitu tinggi gambar</li>
+				<li><code style="font-size: 14px; color: red;">Border</code>, yaitu garis tepi gambar</li>
+				<li><code style="font-size: 14px; color: red;">Margin</code>, jarak gambar dengan elemen lain</li>
+				<li><code style="font-size: 14px; color: red;">Padding</code>, jarak kedalam gambar</li>
+				<li><code style="font-size: 14px; color: red;">Float</code>, posisi gambar dengan konten lain</li>
+				<li><code style="font-size: 14px; color: red;">Box-shadow</code>, memberi efek shadow / bayangan</li>
+			</ul>
+		</div>
+
+		<div class="country">
+			<h2>Mengatur Tinggi dan Lebar</h2>
+			<p>Property css yang digunakan adalah adalah width: dan height: menggunakan satuan ukuran css yang umum digunakan, seperti px dan persen %.</p>
+			<details>
+				<figure>
+					<img src="gambar/img-css-1.png">
+				</figure>
+				<p>Penggunaa Properti Height dan Width bisa digunakan secara terpisah. Bisa saja yang diset hanya Height ataupun Width</p>
+			</details>	
+		</div>
+
+		<div class="country">
+			<h2>Mengatur Border Gambar</h2>
+			<p>Cara mengaturnya, kita hanya tinggal memberi properti border css pada gambar tersebut.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/img-css-6.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Mengatur Margin dan Padding</h2>
+			<p>Margin adalah jarak luar antar elemen. Sedangkan padding adalah jarak sisi dalam elemen dengan elemen yang ada di dalamnya.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<h3>Margin</h3>
+				<figure>
+					<img src="gambar/img-css-2.png">
+				</figure>
+
+				<h3>Padding</h3>
+				<figure>
+					<img src="gambar/img-css-7.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Mengatur Posisi Float</h2>
+			<p>Dengan mengatur float css kita bisa mengatur letak posisi gambar dalam konten.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<h3>Float Kiri</h3>
+				<figure>
+					<img src="gambar/img-css-3.png">
+				</figure>
+				
+				<h3>Float Kanan</h3>
+				<figure>
+					<img src="gambar/img-css-4.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Memberi Efek Shadow</h2>
+			<p>Supaya lebih keren, kita bisa menambahkan bayangan dengan menggunakan box-shadow.</p>
+			<p>Perhatikan Contoh :</p>
+			<details>
+				<figure>
+					<img src="gambar/img-css-5.png">
+				</figure>
+			</details>					
+		</div>
+	</section>
+
+	<section>
+	<h2 id="video">Materi Video</h2>
+		<div class="country">
+			<figure>
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/1p78azsLJ2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			</figure>
+		</div>
+	</section>
+</article>
+
+<footer>
+	<p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Modul 6</title>
+	<meta charset="utf-8">
+	<style>
+		body {font-family: Verdana, sans-serif; font-size:0.8em;}
+		header, section, article, footer, div.city, div.country
+		{border:1px solid grey; margin-bottom:15px; padding:8px;background-color:white;}
+		header,footer {color:white;background-color:#444;margin-bottom:5px;}
+		section {background-color:#ddd;}
+		nav ul {margin:0; padding:0;}
+		nav ul li {display:inline; margin:5px;}
+		code {font-size: 14px; color: red;}
+	</style>
+</head>
+
+<body>
+	<header>
+  		<h1 align="right">Modul 6 | Height Width, Table, Icon, dan Form</h1>
+	</header>
+<nav>
+	<ul>
+  		<li><a href="#hw">Height Width</a></li>
+  		<li><a href="#ico">Icon</a></li>
+  		<li><a href="#tab">Table</a></li>
+  		<li><a href="#frm">Form</a></li>
+  		<li><a href="#video">Materi Video</a></li>
+  		<li><a href="../daftar-modul.html">Daftar Modul</a></li>
+  		<li><a href="../../sub-materi/teori.html">Kembali</a></li>
+	</ul>
+</nav>
+
+<article>
+
+	<section>
+		<h2 id="hw">Height Width</h2>
+		<div class="city">
+			<h2>Pendahuluan</h2>
+			<p>Pada CSS sendiri Kita bisa mengatur lebar dan tinggi pada elemen HTML dengan properti width dan height, width yang berarti lebar dan height yang berarti tinggi. Dengan begitu Kita bisa menyesuaikan ukuran lebar maupun tinggi sesuai dengan kebutuhan Kita. Secara default ukuran width dan height tergantung pada konten didalamnya.</p>
+		</div>
+
+		<div class="city">
+			<h2>Nilai width dan height</h2>
+			<p>Pada properti width dan height Kita bisa memberikan nilai sebagai berikut:</p>
+			<ul>
+				<li>auto– Ini adalah default. Browser menghitung width dan height secara otomatis</li>
+				<li>length – Mengatur width atau height dengan px, cm, pt dll </li>
+				<li>% – Mengatur width atau height dengan persen</li>
+				<li>initial – Mengatur width atau height ke nilai default</li>
+				<li>inherit – Mengatur width atau height ke nilai warisan dari elemen induknya</li>
+			</ul>
+		</div>
+
+		<div class="city">
+			<h2>Width Height</h2>
+			<p>Dengan properti width dan height Kita bisa memberikan ukuran pada suatu elemen. Width yang berarti lebar dan height yang berarti tinggi.</p>
+			<details>
+			<figure>
+				<img src="gambar/hw-css-1.png">
+			</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Max-width dan max-height</h2>
+			<p>Dengan properti max-width dan max-height Kita bisa memberikan ukuran pada suatu elemen. Max-width yang berarti lebar maksimal dan max-height yang berarti tinggi maksimal.</p>
+			<details>
+			<figure>
+				<img src="gambar/hw-css-2.png">
+			</figure>
+			<p>Perhatikan contoh diatas !!</p>
+			<p>Box hijau diberi style yang membatasi maksimal lebar sebesar 200px dan maksimal tinggi yang diberi 50px. Jadi box yang berwarna hijau tidak akan bisa mempunyai lebar lebih dari 200px, tetapi bisa mempunyai lebar 200px atau dibawahnya, dan tinggi box hijau tidak akan bisa mempunyai tinggi lebih dari 50px, tetapi bisa mempunyai tinggi 50px atau dibawahnya. Berbeda dengan box berwarna kuning, yang tidak mempunyai batas lebar maksimal maupun tinggi maksimal.</p>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Min-width dan min-height</h2>
+			<p>Dengan properti min-width dan min-height Kita bisa memberikan ukuran pada suatu elemen. Min-width yang berarti lebar minimal dan min-height yang berarti tinggi minimal.</p>
+			<details>
+			<figure>
+				<img src="gambar/hw-css-3.png">
+			</figure>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="ico">I C O N</h2>
+		<div class="country">
+			<h2>Pendahuluan</h2>
+			<p>Icon adalah gambar kecil di samping menu / teks (biasanya) untuk membantu visualisasi dari menu tersebut.</p>
+			<p>Di CSS umum digunakan icon yang sudah disediakan oleh vendor besar, yaitu:</p>
+			<ul>
+				<li>Font Awesome</li>
+				<li>Bootstrap icon</li>
+				<li>Google icon</li>
+			</ul>
+		</div>
+
+		<div class="country">
+			<h2>Font Awesome</h2>
+			<p>Yang sering digunakan adalah font-awesome. Penggunaan dari icon ini juga sangat mudah. Ada banyak cara untuk menggunakan icon ini, kesempatan kali ini kita menggunakan jquery. Pasang script dibawah setelah kode <code>&lthead></code> atau sebelum <code>&lt/head></code>.</p>
+			<p><code>&ltscript src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" data-auto-replace-svg="nest">&lt/script></code></p>
+			<p>Cara menggunakannya sangat mudah, yaitu tinggal menggunakan format:</p>
+			<p><code>&lti class="fas fa-camera">&lt/i></code></p>
+			<p>fas adalah style icon tersebut, dan fa-camera adalah icon yang dipanggil.</p>
+			<details>
+				<figure>
+					<img src="gambar/ico-css-1.jpg">
+				</figure>
+			</details>
+			Untuk list icon dapat kamu lihat di: <a href="https://fontawesome.com/icons">https://fontawesome.com/icons</a>	
+		</div>
+
+		<div class="country">
+			<h2>Bootstrap Icon</h2>
+			<p>ika kamu sudah menggunakan template berbasis bootstrap maka kamu sudah bisa menggunakan ini. Tapi, kalau belum. Install dulu CSSnya, dengan cara panggil CSS eksternal dibawah ini. Taruh setelah kode <code>&lthead></code>.</p>
+			<p><code>&ltlink href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"></code></p>
+			<p>Cara menggunakannya sama seperti font awesome</p>
+			<p><code>&lti class="glyphicon glyphicon-cloud">&lt/i></code></p>
+			<p>Ganti glyphicon-cloud dengan nama icon.List iconnya: <a href="https://icons.getbootstrap.com/#icons">https://icons.getbootstrap.com/#icons</a></p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/ico-css-2.jpg">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Google Icon</h2>
+			<p>Install font icon dari google.<code>&ltlink rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></code>. Cara menggunakannya:</p>
+			<p><code>&ltspan class="material-icons md-18">face&lt/span></code></p>
+			<p>Ganti face dengan icon yang kamu inginkan. List iconnya: <a href="https://material.io/resources/icons/?style=baseline">https://material.io/resources/icons/?style=baseline</a></p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/ico-css-3.jpg">
+				</figure>
+			</details>
+		</div>
+	</section>
+
+<section>
+	<h2 id="tab">T A B L E</h2>
+		<div class="country">
+			<h2>Pendahuluan</h2>
+			<p>Jika Kita membuat tabel pada HTML dan tidak diberikan style apa pun, maka browser menampilkannya tanpa border atau batas. Dengan begitu Kita perlu memberikan style atau CSS pada tabel agar memberikan design yang lebih menarik.</p>
+			<h3>Menambahkan border pada tabel</h3>
+			<p>Karena default dari tabel tidak ada visual perbatasan, maka Kita bisa memberikan visual perbatasan dengan properti <code>border</code>.</p>
+			<details>
+				<figure>
+					<img src="gambar/tab-css-1.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Tabel border collapse</h2>
+			<p>Jika Kita telah melihat hasil dari contoh diatas, bahwa tabel memiliki border ganda dan ada sedikit ruang pada sekitar konten, ini karena border tabel dipisahkan secara default. Tetapi dengan properti <code>border-collapse</code> Kita bisa menghilangkanya supaya tabel memiliki border tunggal.</p>
+			<details>
+				<figure>
+					<img src="gambar/tab-css-2.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Table Layout</h2>
+			<p>Secara default lebar dari tabel akan memperluas menyesuaikan lebar dari konten didalamnya, tetapi Kita bisa mengatur lebar tetap atau fixed pada tabel dengan properti <code>table-layout</code>. Kemungkinan nilai untuk properti ini adalah:</p>
+			<ul>
+				<li><code>auto</code> – dengan nilai auto lebar dari tabel akan memperluas menyesuaikan lebar dari konten didalamnya. Ini adalah default.</li>
+				<li><code>fixed</code> – dengan nilai fixed lebar dari tabel akan mengikuti lebar yang telah ditentukan. Tata letak horizontal tabel tidak bergantung pada isi sel, tetapi hanya tergantung pada lebar tabel, lebar kolom, dan border atau jarak sel.</li>
+				<li><code>inherit</code> – mengikuti nilai dari elemen induknya.</li>
+			</ul>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/tab-css-3.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Table Empty Cells</h2>
+			<p>Dengan properti <code>empty-cells</code> Kita bisa mengontrol border atau perbatasan apakah akan menggunakan border atau tidak pada sel tabel yang tidak memiliki konten didalamnya. Kemungkinan nilai untuk properti ini adalah:</p>
+			<ul>
+				<li><code>show</code> – menampilkan border atau perbatasan pada tabel yang tidak memiliki konten didalamnya. Ini adalah default</li>
+				<li><code>hide</code> – tidak menampilkan border atau perbatasan pada tabel yang tidak memiliki konten didalamnya.</li>
+				<li><code>inherit</code> – mengikuti nilai dari elemen induknya.</li>
+			</ul>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/tab-css-4.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Tabel Caption Side</h2>
+			<p>Dengan properti <code>caption-side</code> Kita bisa mengatur letak caption dari tabel apakah akan diatas atau dibawah.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/tab-css-5.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Tabel Border Spacing</h2>
+			<p>Jika Kita menambahkan border pada tabel, maka tabel akan memiliki border atau perbatasan ganda, hal ini karena kedua elemen tabel <code>&ltth></code> dan <code>&lttd></code> memiliki border terpisah. Secara default border ganda tersebut mempunyai ruang didalam tabel. Kita bisa memperluas ruang tersebut dengan properti <code>border-spacing</code>.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/tab-css-6.png">
+				</figure>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="frm">F O R M</h2>
+		<div class="country">
+			<h2>Pendahuluan</h2>
+			<p>Form adalah element html yang digunakan untuk membuat formulir online. Kita bisa mengedit tampilan form ini menjadi lebih menarik. Contoh gambar form ini jika tanpa css:</p>
+			<figure>
+				<img src="gambar/ilus-frm-1.png">
+			</figure>
+			<p>Jika menerapkan CSS akan seperti ini :</p>
+			<figure>
+				<img src="gambar/ilus-frm-2.png">
+			</figure>
+		</div>
+
+		<div class="country">
+			<h2>Style Input</h2>
+			<p>Pertama kita bisa mengedit input dulu. Pahami jenis-jenis input form supaya kita tahu yang diedit. Misal, jika input teks. Yaitu <code>&ltinput type="text"></code> maka selector cssnya adalah <code>input[type=text]</code>.</p>
+			<p>Kode CSSnya adalah:</p>
+			<p><code>input[type=text] {width:100%;}</code></p>
+			<p>Jika ingin mengedit semua jenis inputnya, maka <code>input[type=text]{}</code> diganti dengan <code>input {}</code>. Selektor lain: <code>input[type=password]{}</code> , <code>input[type=number]{}</code>, <code>input[type=submit]{}</code> dll.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/frm-css-1.jpg">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Atur Box Sizing</h2>
+			<p><code>Box-sizing</code> maksudnya atur layout box atau kotak dari input. Yang biasa diatur adalah:</p>
+			<ul>
+				<li><code>width</code>: mengatur panjang input</li>
+				<li><code>padding</code>: mengatur jarak teks elemen di dalam input</li>
+				<li><code>margin</code>: mengatur jarak antar elemen input</li>
+				<li><code>display</code>: mengatur tipe penempatan tampilan</li>
+				<li><code>box-sizing</code>: supaya border sudah termasuk ukuran box</li>
+			</ul>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/frm-css-2.jpg">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Atur Warna</h2>
+			<p>Warna yang biasa diatur adalah <code>background</code>, <code>border</code> dan <code>color</code> untuk teks form.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/frm-css-3.jpg">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Atur Style Hover</h2>
+			<p><code>hover</code> adalah efek ketika form di klik atau kursor mengarah ke elemen tersebut. Cukup tambahkan <code>:hover</code> saja di setiap element yang ingin diubah efeknya. Dalam hal ini <code>form#background_border_hover input[type=submit]</code>. Bisa jadi cuma <code>input:hover</code> juga bisa, nanti efeknya di semua input type.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/frm-css-4.jpg">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Atur Focus Input</h2>
+			<p><code>:focus</code> adalah ketika input sedang diketik atau digunakan.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/frm-css-5.jpg">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Transisi Animasi</h2>
+			<p>Tinggal set panjang <code>width:50%</code> dan tambahkan efek <code>transition: width 0.6s ease-in-out;</code>. Kemudian di <code>:focus</code> panjang <code>width:100%</code>.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/frm-css-6.jpg">
+				</figure>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="video">Materi Video</h2>
+		<div class="country">
+			<figure>
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/jTfYeo4Nq-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			</figure>
+		</div>
+	</section>
+</article>
+
+<footer>
+	<p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

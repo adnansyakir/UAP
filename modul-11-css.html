@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Modul 11</title>
+	<meta charset="utf-8">
+	<style>
+		body {font-family: Verdana, sans-serif; font-size:0.8em;}
+		header, section, article, footer, div.city, div.country
+		{border:1px solid grey; margin-bottom:15px; padding:8px;background-color:white;}
+		header,footer {color:white;background-color:#444;margin-bottom:5px;}
+		section {background-color:#ddd;}
+		nav ul {margin:0; padding:0;}
+		nav ul li {display:inline; margin:5px;}
+		code {font-size: 14px; color: red;}
+	</style>
+</head>
+
+<body>
+	<header>
+  		<h1 align="right">Modul 11 | CSS3 (3)</h1>
+	</header>
+<nav>
+	<ul>
+  		<li><a href="#trans">Transition</a></li>
+  		<li><a href="#obj">Object Fit</a></li>
+  		<li><a href="#btn">Button</a></li>
+  		<li><a href="#video">Materi Video</a></li>
+  		<li><a href="../daftar-modul.html">Daftar Modul</a></li>
+  		<li><a href="../../sub-materi/teori.html">Kembali</a></li>
+	</ul>
+</nav>
+
+<article>
+
+	<section>
+		<h2 id="trans">TRANSITION</h2>
+		<div class="city">
+			<h2>Pendahuluan</h2>
+			<p>Untuk membuat efek transisi, ada dua hal yang perlu kamu perhatikan. Yaitu: durasi transisi dan property yang akan berubah.</p>
+			<p>Jika kamu tidak menentukan durasi transisi, maka transisi tidak akan berjalan. Karena secara default nilai durasinya adalah 0.</p>
+			<p>Syntaxnya: <code>transition: property1 duration1, property2 duration2, ....;</code></p>
+			<p>Contoh:</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-trans1.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hsl-trans1.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Speed curve animasi</h2>
+			<p>Seperti animasi curve, dalam transition juga efeknya sama aja. Dengan menggunakna transition-timing-function. Nilainya adalah: linear, ease-in, ease, ease-in-out dan ease-out.</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-speeddrive.jpg">
+				</figure>
+				<p>DIsitu ditentukan nilai awal width adalah 150px, dan width setelah :hover jadi 100%. Ditentukan dengan <code>property transition:width 2s;</code> dimana width adalah property yang berubah dan 2s adalah durasinya.</p>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hsl-speeddrive.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Multiple Transition</h2>
+			<p>Kita bisa membuat efek transisi untuk lebih dari satu property. Contoh:</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-multiple.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hsl-multiple.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="obj">OBJECT FIT</h2>
+		<div class="country">
+			<p>CSS object-fit adalah property css yang digunakan untuk &ltimg> atau &ltvideo> supaya ukurannya bisa sesuai dengan box container. Semua borwser modern mendukung property ini.</p>
+			<p>Ada lima value yang bisa digunakan untuk object-fit, berikut tabel daftarnya:</p>
+			<ul>
+				<li><code>contain</code> - Ukuran konten disesuaikan dengan aspect rasio maksimal di box container</li>
+				<li><code>cover</code> - Gambar akan dikrop dan dijadikan cover (memenuhi) box</li>
+				<li><code>fill</code> - Ini default. Gambar “dipaksa” untuk sesuai dengan ukuran yang ditentukan</li>
+				<li><code>none</code> - Konten tidak diubah ukurannya</li>
+				<li><code>scale-down</code> - Ukuran seolah-olah tidak ditentukan (berefek kalau ukuran objek lebih kecil)</li>
+			</ul>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-objectfit.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hsl-objectfit.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="btn">B U T T O N</h2>
+		<div class="country">
+			<p>Button atau tombol digunakan sebagai element untuk memberikan sebuah action, biasanya pada form online.</p>
+			<p>Untuk membuat button, digunakan syntax <code>&ltbutton>&lt/button></code>.</p>
+			<p>Kita akan membuat Button dengan warna. Untuk membuat background warna menggunakan properti <code>background-color</code>, untuk mengganti warna huruf digunakan <code>color</code>.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-button-warna.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hsl-button-warna.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Ukuran Button</h2>
+			<p>Ukuran button bisa diatur, ada banyak metode. Misal dengan menentukan width atau height, padding. Tapi, di sini saya akan mencontohkan dengan mengatur ukuran font.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-ukuran-button.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hsl-ukuran-button.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Button Shadow</h2>
+			<p>Untuk menambahkan shadow kita butuh <code>box-shadow</code>.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-button-shadow.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hsl-button-shadow.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Button Rounded</h2>
+			<p>Untuk membuat sudut pada tombol menjadi agak bulat, kita dapat menambahkan properti <code>rounded</code>.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-button-rounded.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hsl-button-rounded.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Disabled Button</h2>
+			<p>Untuk membuat tombol yang bisa diklik, kita gunakan dua property. Pertama adalah <code>opacity</code> untuk membuat warna lebih redup, dan <code>cursor</code> dibuat <code>not-allowed</code>.</p>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/cth-button-disable.jpg">
+				</figure>
+				<h3>Hasilnya seperti ini.</h3>
+				<figure>
+					  <video autoplay loop muted playsinline width="560" height="315">
+    					<source src="gambar/hsl-button-disable.mp4" type="video/mp4" />
+  					</video>
+				</figure>
+			</details>
+		</div>
+
+	<section>
+	<h2 id="video">Materi Video</h2>
+		<div class="country">
+			<figure>
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/_TyGXpsbYjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			</figure>
+		</div>
+	</section>
+</article>
+
+<footer>
+	<p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

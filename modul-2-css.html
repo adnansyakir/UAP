@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Modul 2</title>
+	<meta charset="utf-8">
+	<style>
+		body {font-family: Verdana, sans-serif; font-size:0.8em;}
+		header, section, article, footer, div.city, div.country
+		{border:1px solid grey; margin-bottom:15px; padding:8px;background-color:white;}
+		header,footer {color:white;background-color:#444;margin-bottom:5px;}
+		section {background-color:#ddd;}
+		nav ul {margin:0; padding:0;}
+		nav ul li {display:inline; margin:5px;}
+	</style>
+</head>
+
+<body>
+	<header>
+  		<h1 align="right">Modul 2 | Background dan Font</h1>
+	</header>
+<nav>
+	<ul>
+  		<li><a href="#bg">Background</a></li>
+  		<li><a href="#font">Font</a></li>
+  		<li><a href="#video">Materi Video</a></li>
+  		<li><a href="../daftar-modul.html">Daftar Modul</a></li>
+  		<li><a href="../../sub-materi/teori.html">Kembali</a></li>
+	</ul>
+</nav>
+
+<article>
+
+	<section>
+		<h2 id="bg">BACKGROUND</h2>
+		<div class="city">
+			<h2>Pendahuluan</h2>
+			<p>Background atau latar belakang adalah elemen penting dari suatu web. Yang bikin web itu menarik adalah bagian backgroundnya.Dengan menggunakan CSS, kita bisa mengganti background web dengan berbagai macam jenis. Misalnya:</p>
+			<ul>
+				<li>Background CSS Warna</li>
+				<li>Background CSS dengan Gambar</li>
+			</ul>
+			<p>Pada CSS kita bisa memberikan style untuk background atau latar belakang, kebanyakan orang menggunakan properti background untuk mengatur warna latar belakang atau memberikan gambar latar belakang. CSS menyediakan beberapa properti untuk styling latar belakang seperti: <code style="font-size: 14px; color: red;">background-color, background-image, background-repeat, background-attachment</code> dan <code style="font-size: 14px; color: red;">background-position</code>.</p>
+		</div>
+
+		<div class="city">
+			<h2>Background Color</h2>
+			<p>Dengan properti <code style="font-size: 14px; color: red;">background-color</code> anda bisa gunakan untuk memberikan warna latar belakang pada elemen HTML. Nilai color CSS yang paling sering gunakan:</p>
+			<ul>
+				<li>nilai HEX – seperti #ff0000</li>
+				<li>nilai RGB – seperti rgb (255,0,0)</li>
+				<li>nama color – seperti blue</li>
+			</ul>
+			<p>Perhatikan Contoh Berikut ini :</p>
+			<figure>
+				<img src="gambar/bg-css-1.png">
+			</figure>
+		</div>
+
+		<div class="city">
+			<h2>Background Image</h2>
+			<p>Dengan properti <code style="font-size: 14px; color: red;">background-image</code> kita bisa menggunakannya untuk menambahkan gambar latar belakang pada elemen HTML. Secara default background image akan mengulang gambarnya baik secara horizontal atau pun vertikal sehingga mencakup seluruh elemen. Perhatikan Contoh Berikut ini :</p>
+			<figure>
+				<img src="gambar/bg-css-2.png">
+			</figure>
+			<p>Masukan url gambar dengan benar. Jika tidak, gambar akan gagal dimuat atau tidak menampilkan apa-apa. Saat menggunakan gambar latar belakang, gunakan gambar yang tidak mengganggu teks atau elemen yang ada didalamnya.</p>
+		</div>
+
+		<div class="city">
+			<h2>Background Repeat</h2>
+			<p>Dengan properti <code style="font-size: 14px; color: red;">background-repeat</code> kita bisa menggunakannya untuk mengatur pengulangan gambar. Pada <code style="font-size: 14px; color: red;">background-repeat</code> sendiri biasanya para programmer mengatur pengulangannya secara horizontal, vertikal atau tidak sama sekali. Berikut listnya beserta contoh didalamnya: </p>
+			<ul>
+				<li><code style="font-size: 14px; color: red;">background-repeat: repeat-x</code> utk mengulang secara horizontal</li>
+				<li><code style="font-size: 14px; color: red;">background-repeat: repeat-y</code> utk mengulang secara vertikal</li>
+				<li><code style="font-size: 14px; color: red;">background-repeat: no-repeat</code> utk tidak melakukan pengulangan</li>
+			</ul>
+			<p>Perhatikan Contoh Berikut ini :</p>
+			<details>
+			<figure>
+				<figcaption><b>Contoh repeat-x</b></figcaption>
+				<img src="gambar/bg-css-3.png">
+			</figure>
+			<figure>
+				<figcaption><b>Contoh repeat-y</b></figcaption>
+				<img src="gambar/bg-css-4.png">
+			</figure>
+			<figure>
+				<figcaption><b>Contoh no-repeat</b></figcaption>
+				<img src="gambar/bg-css-5.png">
+			</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Background Position</h2>
+			<p>Dengan properti <code style="font-size: 14px; color: red;">background-position</code> kita bisa menggunakannya untuk mengatur posisi gambar. kita bisa mengatur background position dengan memasukan nilai posisi seperti dibawah ini:</p>
+			<ul>
+				<li>top --> atas</li>
+				<li>right --> kanan</li>
+				<li>bottom --> bawah</li>
+				<li>left --> kiri</li>
+				<li>center --> tengah</li>
+			</ul>
+			<p> atau kita bisa juga memasukkan : </p>
+			<ul>
+				<li> px --> pixel</li>
+				<li> % --> persen</li>
+			</ul>
+			<p>Perhatikan contoh berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/bg-css-6.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Background Attachment</h2>
+			<p>Dengan properti <code style="font-size: 14px; color: red;">background-attachment</code> kita bisa menggunakannya untuk mengatur apakah gambar bisa digulir atau posisi fixed ( tidak bisa digulir ). Kita bisa mengatur background attachment dengan dua cara: </p>
+			<ul>
+				<li><code style="font-size: 14px; color: red;">background-attachment: fixed</code> --> gambar tidak bisa digulir</li>
+				<li><code style="font-size: 14px; color: red;">background-attachment: scroll</code> --> gambar bisa digulir</li>
+			</ul>
+			<p>Perhatikan Contoh Berikut ini :</p>
+			<details>
+			<figure>
+				<img src="gambar/bg-css-7.png">
+			</figure>
+			</details>
+		</div>
+
+		<div class="city">
+			<h2>Background Shorthand</h2>
+			<p>Dengan background shorthand kita bisa mempersingkat sebuah kode. Shorthand sendiri yang berarti “steno” atau menulis cepat. Dengan cara ini dimungkinkan juga untuk menentukan semua properti background dalam satu properti tunggal. Untuk menggunakan background shorthand kita cukup menggunakan properti background. Dengan begitu kita tidak lagi menulis kode yang panjang seperti contoh sebelumnya.</p>
+			<p>Perhatikan Contoh Berikut ini :</p>
+			<details>
+			<figure>
+				<img src="gambar/bg-css-8.png">
+			</figure>
+			</details>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="font">F O N T</h2>
+		<div class="country">
+			<h2>Font Generic</h2>
+			<p>Font generic sendiri merupakan keluarga font yang paling umum atau bisa dibilang font default, yang dimana hampir didukung pada setiap browser, Masalah dengan menggunakan nama font generik adalah bahwa desain halaman web kita akan bergantung pada font yang ditetapkan oleh pengguna dalam pengaturannya. Berikut daftar font generic:</p>
+			<ul>
+				<li>
+					<strong>Serif</strong> <br>
+					<details>
+						<summary>Penjelasan</summary>
+						<p>serif: Sebagian besar digunakan ketika teks ditulis untuk tujuan pencetakan seperti buku, surat kabar, majalah, dll. Karakter teks dihiasi dengan goresan di akhir. Contoh serif font-family adalah Times New Roman, Garamond, Georgia, Literata, Minion, Perpetua, dll.</p>
+					</details>
+				</li>
+				<li>
+					<strong>Sans-serif</strong><br>
+					<details>
+						<summary>Penjelasan</summary>
+						<p>sans-serif: Gayanya modern, formal, dan simpel dalam penampilan. Tidak seperti “Serif” Itu tidak memiliki stroke di ujungnya. Ini memiliki berbagai penggunaan tetapi paling sering dalam bentuk teks digital. Contoh sans-serif adalah Verdana, Arial, Calibri, Helvetica, Futura, Impact, Lato, Optima, Skia, dll.</p>
+					</details>
+				</li>
+				<li>
+					<strong>Cursive</strong><br>
+					<details>
+						<summary>Penjelasan</summary>
+						<p>cursive: Jenis font ini sebagian besar digunakan dalam surat undangan, pesan informal, berita utama, dll. Penampilannya seperti, teks tulisan tangan menggunakan pena atau kuas. Contoh font-family cursive adalah Flanella, Belluccia, Insolente, Corsiva, Zapfino, dll.</p>
+					</details>
+				</li>
+				<li>
+					<strong>monospace</strong> <br>
+					<details>
+						<summary>Penjelasan</summary>
+						<p>monospace: Digunakan untuk memberikan contoh, teks yang diketik, instruksi, alamat surat, contoh kode, dll. Setiap karakter teks memiliki lebar yang sama. Contoh font-family monospace adalah Kurir, konsol, Monako, SimSun, Terminal, Menlo, Inconsolata, dll.</p>
+					</details>
+				</li>
+				<li>
+					<strong>fantasy</strong> <br>
+					<details>
+						<summary>Penjelasan</summary>
+						<p>fantasy: Digunakan untuk membuat teks lebih dekoratif, berdampak dan ekspresif. Jenis font ini harus digunakan dalam teks yang lebih pendek, karena tidak mudah untuk membacanya dengan mudah. Contoh keluarga font fantasi adalah Impact, Cracked, Critter, Studz, Copperplate, dll.</p>
+					</details>
+				</li>
+			</ul>
+			<p>Perhatikan Contoh Berikut : </p>
+			<details>
+				<figure>
+					<img src="gambar/fon-css-1.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Font Family</h2>
+			<p>Dengan properti font-family kita bisa menggunakannya untuk merubah jenis font. Pada properti font-family kita harus memegang beberapa nama font sebagai sistem “fallback”. Ini sangat berguna jika browser tidak mendukung font pertama, ia mencoba font berikutnya dan seterusnya.</p>
+			<p>Karena properti font-family diwarisi oleh semua elemen HTML, kita dapat menerapkan font untuk seluruh dokumen HTML dengan menerapkannya pada elemen &ltbody>.</p>
+			<p>Jika nama font yang kita pilih memiliki lebih dari satu kata, maka kita harus membungkusnya dengan tanda kutip, seperti: “Times New Roman”, “Courier New” dan jika kita menambahkan nama font lebih dari satu, maka harus dipisahkan dengan koma.</p>
+			<details>
+				<figure>
+					<img src="gambar/fon-css-2.png">
+				</figure>
+			</details>	
+			<p>Jika kita sudah memilih font yang kita inginkan yang bukan termasuk keluarga font generic, maka tambahkan font generik. Ini menjaga jika font yang kita pilih tidak tersedia maka akan menggunakan font generic, yang dimana font generic hampir didukung disemua browser.</p>
+
+			<h3>Menggunakan Font dari Google</h3>
+			<p>Google Font adalah salah satu layanan yang meyediakan berbagai jenis font secara gratis. kita dapat mengunjungi web: https://fonts.google.com/. Google font menyediakan lebih dari 952 jenis font yang bisa kita gunakan, dan ini berlisensi gratis. Untuk menggunakannya silakan kita ikuti langkah-langkah dibawah ini.</p>
+			<ol type="1">
+				<li> Kunjungi https://fonts.google.com/ dan pilih salah satu font yang akan kita gunakan. Sebagai contoh kita akan gunakan Font jenis Grenze.</li>
+				<li>Jika sudah silakan klik icon tambah. Lalu ambil link url fontnya.</li>
+				<li>Masukan didalam tag html &lthead>&lt/head>. Lalu gunakan properti font-family dan masukan nama font yang kita pilih tadi.</li>
+			</ol>
+			<p>Perhatikan Contoh Berikut ini : </p>
+			<details>
+				<figure>
+					<img src="gambar/fon-css-3.png">
+				</figure>
+				<caption>Contoh diatas menggunakan font external, mengambil script diluar situs kita, maka contoh diatas harus terkoneksi dengan internet.</caption>
+			</details>	
+		</div>
+
+		<div class="country">
+			<h2>Font style</h2>
+			<p>Dengan properti font-style kita bisa menggunakannya untuk menentukan gaya font untuk teks. Properti ini memiliki tiga nilai:</p>
+			<ul>
+				<li>normal – Teks ditampilkan standar (default)</li>
+				<li>italic – Teks ditampilkan dalam huruf miring</li>
+				<li>oblique – Teks “bersandar” (oblique sangat mirip dengan italic, tapi kurang didukung)</li>
+			</ul>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/fon-css-4.png">
+				</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Font Size</h2>
+			<p>Dengan properti font-size kita bisa menggunakannya untuk menetapkan ukuran pada teks. Namun, kita tidak harus menggunakan penyesuaian ukuran font seperti, misalnya ingin membuat paragraf terlihat seperti pos atau heading (&lth1> – &lth6>). Nilai font-size bisa menjadi ukuran absolut, atau relatif.</p>
+			<pre style="font-size: 16px;">
+		<b>Ukuran Absolut:</b>
+		- Mengatur teks ke ukuran tertentu.
+		- Tidak memungkinkan pengguna untuk mengubah ukuran teks dalam semua browser (buruk karena alasan aksesibilitas).
+		- Ukuran absolut berguna ketika ukuran fisik atau output layar diketahui.
+
+		<b>Ukuran relatif:</b>
+		- Mengatur ukuran relatif terhadap elemen sekitarnya.
+		- Memungkinkan pengguna untuk mengubah ukuran teks dalam browser.
+			</pre>
+			<p>Perhatikan Contoh Berikut :</p>
+			<details>
+				<figure>
+					<img src="gambar/fon-css-5.png">
+				</figure>
+			<p>Informasi: jika kita tidak menentukan ukuran font, ukuran standar untuk teks normal, seperti paragraf adalah 16px (<b>16px = 1em</b>).</p>
+			</details>
+			<p>Piksel (px): Piksel adalah unit ukuran tetap yang digunakan dalam media layar (yaitu untuk dibaca di layar komputer). Satu piksel sama dengan satu titik di layar komputer. Banyak perancang web menggunakan unit piksel dalam design webnya untuk menghasilkan representasi piksel sempurna. Satu masalah dengan unit pixel adalah bahwa ia tidak naik ke atas untuk pembaca tunanetra atau ke bawah agar sesuai dengan perangkat seluler.</p>
+			<p>Ems (em): “em” adalah unit yang dapat diskalakan, yang memungkinkan pengguna untuk mengubah ukuran teks (dalam menu browser). Em mengacu pada ukuran font elemen induk atau ukuran yang bersifat dinamis. Ketika mendefinisikan properti font-size suatu em sama dengan ukuran font yang berlaku untuk induk elemen. Jika kita menetapkan font-size 20px pada elemen induk, lalu 1em = 20px dan 2em = 40px. Jika kita belum menetapkan ukuran font di mana pun di halaman, maka itu adalah default browser, yang mungkin 16px. Jadi, secara default 1em = 16px, dan 2em = 32px.</p>
+		</div>
+
+		<div class="country">
+			<h2>Font Weight</h2>
+			<p>Dengan properti font-weight Anda bisa menggunakannya untuk menentukan berat atau ketebalan pada font. Kemungkinan nilai properti untuk font-weight adalah: normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900 dan inherit. Nilai numerik 100– 900tentukan bobot font, di mana setiap angka mewakili bobot yang lebih gelap daripada pendahulunya. 400sama dengan normal& 700sama dengan bold. Nilai bolderdan lighter relatif terhadap bobot font yang diwarisi, sedangkan nilai lainnya adalah bobot font absolut.</p>
+			<p>Informasi: Jika font tidak tersedia dalam weight yang ditentukan, alternatif akan dipilih yang merupakan bobot terdekat yang tersedia.</p>
+			<p>Perhatikan Contoh :</p>
+			<details>
+				<figure>
+					<img src="gambar/fon-css-6.png">
+				</figure>
+			</details>					
+		</div>
+
+		<div class="country">
+			<h2>Font Variant</h2>
+			<p>Dengan properti font-variant Anda bisa menggunakannya untuk menentukan sebuah teks ditampilkan dalam font small-caps. Dalam font small-caps, semua huruf kecil dikonversi ke huruf besar. Namun, huruf besar dikonversi dalam ukuran font lebih kecil dari huruf besar asli didalam teks. Kemungkinan nilai properti untuk font-variant adalah normal, small-caps dan inherit.</p>
+			<p>Perhatikan Contoh :</p>
+			<details>
+				<figure>
+					<img src="gambar/fon-css-7.png">
+				</figure>
+			</details>					
+		</div>
+	</section>
+
+	<section>
+	<h2 id="video">Materi Video</h2>
+		<div class="country">
+			<figure>
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/nt3-_B2EL2s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			</figure>
+		</div>
+	</section>
+</article>
+
+<footer>
+	<p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

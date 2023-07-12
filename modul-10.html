@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Modul 10</title>
+<meta charset="utf-8">
+<style>
+body {
+    font-family:Verdana,sans-serif;font-size:0.8em;
+}
+header,footer,section,article {
+    border:1px solid grey;
+    margin:5px;margin-bottom:15px;padding:8px;
+    background-color:white;
+}
+header,footer {
+    color:white;background-color:#444;margin-bottom:5px;
+}
+section {
+    background-color:#ddd;
+}
+nav ul {
+    margin:0;padding:0;
+}
+nav ul li {
+    display:inline; margin:5px;
+}
+</style>
+<body>
+
+<header>
+  <h1 align="right">Modul 10 | Elemen Semantik</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#pertama">Pendahuluan</a></li>
+    <li><a href="#kedua">Mengapa Elemen Semantik</a></li>
+    <li><a href="#ketiga">Membuat Layout</a></li>
+    <li><a href="#keempat">Mencoba Elemen Lainnya</a></li>
+    <li><a href="#video">Materi Video</a></li>
+    <li><a href="../daftar-modul.html">Daftar Modul</a></li>
+    <li><a href="../../sub-materi/teori.html">Kembali</a></li>
+  </ul>
+</nav>
+
+<section>
+<h2>HTML</h2>
+
+<article>
+  <h2 id="pertama">Pendahuluan</h2>
+	<p>Elemen semantik adalah elemen-elemen yang menyatakan makna atau tujuan dari elemen itu sendiri. Misalnya tag &ltfooter>, tag ini digunakan untuk membuat elemen footer atau bagian kaki dari web. Jangan gunakan tag ini di bagian paling atas, karena maknanya sudah jelas untuk footer. Jadi tidak akan ada lagi yang namanya penyalahgunaan tag. Karena setiap tag sudah punya tujuan masing-masing.</p>
+  <p>Berikut ini daftar elemen-elemen semantik:</p>
+  <figure>
+    <img src="gambar/semantik-1.png">
+  </figure>
+</article>
+
+<article>
+<h2 id="kedua">Mengapa Harus Pakai Elemen Semantik?</h2>
+<p>Salah satu keuntungan menggunakan elemen semantik adalah dokumen HTML kita akan mudah dibaca, baik itu oleh manusia maupun mesin.</p>
+<p>Coba perhatikan kode berikut:</p>
+<details>
+  <figure>
+  	<img src="gambar/semantik-2.png">
+  </figure>
+</details>
+<p>Gambar 1 adalah contoh layout yang dibuat dengan tag &ltdiv>. Tag ini memang bagus untuk membungkus elemen HTML.Kita mungkin akan mudah paham dengan membaca nama-nama class yang diberikan pada elemen &ltdiv>. Ada &ltdiv> yang bertugas untuk membuat elemen header, article, footer, dan sebagainya. Sekilas, tidak ada masalah dengan ini.. Tapi nanti kalau elemen &ltdiv> nya sudah banyak, kita akan kesulitan membacanya.</p>
+<p>Sekarang coba bandingkan dengan Gambar 2. Ini tentunya akan lebih muda dibaca. Elemen semantik juga bagus untuk SEO. Jika ingin website kita disukai mesin pencari, sebaiknya gunakanlah elemen ini.</p>
+</article>
+
+<article>
+<h2 id="ketiga">Membuat Layout dengan Elemen Semantik</b></h2>
+<p>Mari kita belajar membuat layout dengan elemen semantik. Bisa kita gunakan atribut syle juga untuk mempercantik tampilan.</p>
+<p>Simak Kode berikut ini :</p>
+<figure>
+  <img src="gambar/semantik-3.png">
+</figure>
+<p>Hasilnya seperti ini :</p>
+<figure>
+  <img src="gambar/semantik-4.png">
+</figure>
+</article>
+
+<article>
+<h2 id="keempat">Mencoba Elemen Semantik Lainnya</h2>
+<p>Tidak semua elemen semantik bertujuan untuk membuat layout, ada juga beberapa elemen semantik lainnya yang bertujuan untuk membuat elemen tertentu.</p>
+<h3>Elemen &ltdetail> dan &ltsummary></h3>
+<p>Tag &ltdetail> dan &ltsummary> merupakan tag untuk membuat elemen spoiler. Tag &ltdetail> akan berisi semua detail konten, lalu tag &ltsummary> akan menjadi tombol yang bisa diklik untuk menampikan detail isinya.</p>
+<details>
+  <figure>
+    <img src="gambar/semantik-5.png">
+  </figure>
+</details>
+<p>Perhatikan Contoh berikut :</p>
+<details>
+  <figure>
+    <img src="gambar/semantik-6.png">
+  </figure>
+</details>
+
+<h3>Elemen &lttime></h3>
+<p>Tag &lttime> merupakan tag untuk membuat elemen waktu. Elemen waktu biasanya dibutuhkan untuk menampilkan waktu. Misalnya:
+Waktu saat sebuah postingan dibuat, waktu saat sebuah pesan dibaca, waktu keberangkatan, dan lain sebagainya.</p>
+<p>Perhatikan Contoh Berikut ini :</p>
+<details>
+  <figure>
+    <img src="gambar/semantik-7.png">
+  </figure>
+  <p>Elemen &lttime> akan ditampikan apa adanya. Atribut datetime berfungsi untuk memberikan nilai tanggal dan waktu yang nantinya akan dibaca oleh program.</p>
+</details>
+
+</article>
+
+
+<article>
+<h2 id="video">Materi Video</h2>
+<figure>
+	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/oWGGdi25uqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	</iframe></center>
+</figure>
+</article>
+
+</section>
+
+<footer>
+  <p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

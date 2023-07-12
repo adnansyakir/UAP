@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Modul 7</title>
+<meta charset="utf-8">
+<style>
+body {
+    font-family:Verdana,sans-serif;font-size:0.8em;
+}
+header,footer,section,article {
+    border:1px solid grey;
+    margin:5px;margin-bottom:15px;padding:8px;
+    background-color:white;
+}
+header,footer {
+    color:white;background-color:#444;margin-bottom:5px;
+}
+section {
+    background-color:#ddd;
+}
+nav ul {
+    margin:0;padding:0;
+}
+nav ul li {
+    display:inline; margin:5px;
+}
+code {font-size: 14px; color: red;}
+</style>
+<body>
+
+<header>
+  <h1 align="right">Modul 7 | Box Model</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#satu">Apa itu Box Model</a></li>
+    <li><a href="#dua">Unsur Width & Height</a></li>
+    <li><a href="#tiga">Menghitung Width & Height</a></li>
+    <li><a href="#empat">Memperbaiki Box Model</a></li>
+    <li><a href="#video">Materi Video</a></li>
+    <li><a href="../daftar-modul.html">Daftar Modul</a></li>
+    <li><a href="../../sub-materi/teori.html">Kembali</a></li>
+  </ul>
+</nav>
+
+<section>
+<h2>BOX MODEL</h2>
+
+<article>
+  <h2 id="satu">Apa itu Box Model</h2>
+	<p>Setiap elemen atau tag HTML ditampilkan dalam bentuk box atau kotak, tetapi ada juga sebagian orang menamai kotak persegi panjang. Didalam CSS ini disebut dengan istilah box-model.</p>
+  <p>Jadi box model adalah sebuah box atau “kotak” yang membungkus setiap elemen atau tag pada HTML, yang terdiri dari properti: <code>margin</code>, <code>border</code>, <code>padding</code> dan <code>konten</code>. Dalam CSS, istilah box model digunakan ketika berbicara tentang desain dan tata letak. Supaya tidak bingung silakan lihat ilustrasi gambar dibawah ini:</p>
+  <figure>
+    <img src="gambar/box-css-1.png">
+  </figure>
+  <p>Penjelasan dari setiap bagian:</p>
+  <ul>
+    <li>Konten – Teks, gambar, atau konten media lainnya dalam elemen.</li>
+    <li>Padding – Ruang didalam konten.</li>
+    <li>Border – Garis antara padding dan margin.</li>
+    <li>Margin – Ruang diluar konten.</li>
+  </ul>
+  <p>Perhatikan Contoh berikut :</p>
+  <details>
+    <figure>
+      <img src="gambar/box-css-2.png">
+    </figure>
+  </details>
+</article>
+
+<article>
+<h2 id="dua">Unsur Width & Height</h2>
+  <p>Biasanya para web design ketika mengatur lebar dan tinggi suatu elemen menggunakan properti <code>width</code> dan <code>height</code>. Tetapi pada kenyataannya itu semua hanya mengatur lebar dan tinggi area konten elemen saja. Untuk menghitung ukuran penuh elemen, Kita juga harus menambahkan <code>padding</code>, <code>border</code>, dan <code>margin</code>.</p>
+  <p>Perhatikan Contoh berikut :</p>
+  <details>
+    <figure>
+      <img src="gambar/box-css-3.png">
+    </figure>
+    <p>Silakan Kita lihat hasil dari contoh diatas !!</p>
+    <p>Box berwarna abu-abu mempunyai lebar 260px dan box berwarna kuning mempunyai lebar 200px, tapi jika Kita perhatikan kedua lebar box tersebut mempunyai lebar yang sama bukan? Agar tidak bingung mari kita hitung kenapa bisa terjadi seperti itu. Berikut perhitungannya:</p>
+    <p><code>200px (lebar)+ 40px (padding kiri + kanan) + 20px (border kiri + kanan) + 0px (margin kiri + kanan) = 260px</code></p>
+  </details>
+
+</article>
+
+<article>
+<h2 id="tiga">Menghitung Width & Height</h2>
+  <p>Lebar total elemen harus dihitung seperti ini:</p>
+  <p><code>Total elemen lebar = width + padding kiri + padding kanan + border kiri + border kanan + margin kiri + margin kanan</code></p>
+  <p>Tinggi total elemen harus dihitung seperti ini:</p>
+  <p><code>Tinggi total elemen = height + padding atas + padding bawah + border atas + border bawah + margin atas + margin bawah</code></p>
+</article>
+
+<article>
+<h2 id="empat">Memperbaiki Box Model</h2>
+  <p>Dengan properti box-sizing Kita bisa memperbaiki suatu elemen box/kotak agar sesuai dengan properti <code>width</code> dan <code>height</code>.</p>
+  <p>Perhatikan contoh berikut :</p>
+  <details>
+  <figure>
+    <img src="gambar/box-css-4.png">
+  </figure>
+  </details>
+</article>
+
+<article>
+<h2 id="video">Materi Video</h2>
+<figure>
+	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/_1utS-lE5T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	</iframe></center>
+</figure>
+</article>
+
+</section>
+
+<footer>
+  <p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

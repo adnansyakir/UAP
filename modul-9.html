@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Modul 9</title>
+<meta charset="utf-8">
+<style>
+body {
+    font-family:Verdana,sans-serif;font-size:0.8em;
+}
+header,footer,section,article {
+    border:1px solid grey;
+    margin:5px;margin-bottom:15px;padding:8px;
+    background-color:white;
+}
+header,footer {
+    color:white;background-color:#444;margin-bottom:5px;
+}
+section {
+    background-color:#ddd;
+}
+nav ul {
+    margin:0;padding:0;
+}
+nav ul li {
+    display:inline; margin:5px;
+}
+</style>
+<body>
+
+<header>
+  <h1 align="right">Modul 9 | Form</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#form">Pendahuluan</a></li>
+    <li><a href="#cara">Cara Membuat Form</a></li>
+    <li><a href="#input">Tag &ltinput&gt</a></li>
+    <li><a href="#select">Tag &ltselect&gt</a></li>
+    <li><a href="#textarea">Tag &lttextarea&gt</a></li>
+    <li><a href="#label">Tag &ltlabel&gt</a></li>
+    <li><a href="#legen">Tag &ltfieldset&gt dan &ltlegend&gt</a></li>
+    <li><a href="#video">Materi Video</a></li>
+    <li><a href="../daftar-modul.html">Daftar Modul</a></li>
+    <li><a href="../../sub-materi/teori.html">Kembali</a></li>
+  </ul>
+</nav>
+
+<section>
+<h2>HTML</h2>
+
+<article>
+  <h2 id="form">Pendahuluan</h2>
+	<p>Form adalah elemen HTML yang berfungsi untuk meminta informasi dari user misalnya form login untuk meminta informasi username dan password dari user untuk proses login, form pendaftaran untuk meminta informasi detail tentang user agar bisa mendaftar, form input data untuk disimpan di database dan lain sebagainya.</p>
+  <figure>
+    <img src="gambar/form-1.png">
+  </figure>
+</article>
+
+<article>
+<h2 id="cara">Cara Membuat Form di HTML</h2>
+<p>Untuk membuat form di HTML, kita membutuhkan setidaknya 2 komponen, yaitu tag &ltform> dan form field:</p>
+<ul>
+  <li>Tag &ltform> digunakan untuk mendefinisikan awal dan akhir form pada HTML. Tag &ltform> harus memiliki atribut action dan atribut method.</li>
+  <li>Form field adalah elemen-elemen yang ada di dalam form yang digunakan user untuk mengisi data.</li>
+</ul>
+  <figure>
+  	<img src="gambar/form-2.png">
+  </figure>
+</article>
+
+<article>
+<h2 id="input">Tag &ltinput&gt</b></h2>
+<p>Berikut ini adalah jenis input yang dapat digunakan dalam form :</p>
+<figure>
+  <img src="gambar/form-3.png" style="width: 30%;">   <img src="gambar/form-4.png" style="width: 30%;">
+</figure>
+</article>
+
+<article>
+<h2 id="select">Tag &ltselect&gt</h2>
+<p>Tag &ltselect> digunakan untuk membuat form inputan berdasarkan pilihan yang sudah disediakan.</p>
+<p>Select Option dibuat menggunakan tag &ltselect> dengan atribut name. Lalu di dalam select ditambahkan daftar pilihan-pilihan menggunakan tag &ltoption> dengan atribut value. Agar lebih jelas berikut contohnya:</p>
+<details>
+  <figure>
+    <img src="gambar/form-5.png">
+  </figure>
+</details>
+<p>Perbedaan antara select dengan input adalah tag &ltselect> biasanya berupa menu dropdown yang value-nya berada pada tag &ltoption> sedangkan tag &ltinput> berupa checkbox atau radio button yang harus mendefinisikan value-nya di dalam atribut tag &ltinput>. Untuk lebih jelasnya berikut ini contoh kode perbedaannya:</p>
+<details>
+  <figure>
+    <img src="gambar/form-6.png">
+  </figure>
+</details>
+</article>
+
+<article>
+<h2 id="textarea">Tag &lttextarea&gt</h2>
+<p>Tag &lttextarea> digunakan untuk membuat field berupa text namun dengan ukuran yang lebih besar. Perbedaannya dengan input type text adalah pada ukurannya. Penggunaan pada halaman web biasanya untuk menginputkan teks yang lebih banyak seperti paragraf atau bahkan konten tulisan 1 halaman. Berbeda dengan input type text yang hanya digunakan untuk menginputkan 1 kalimat.</p>
+<p>Simak contoh Berikut ini :</p>
+  <figure>
+    <img src="gambar/form-7.png">
+  </figure>
+<p>Atribut rows digunakan untuk menentukan tinggi dari textarea, sedangkan cols digunakan untuk menentukan lebar dari textarea.</p>
+</article>
+
+<article>
+<h2 id="label">Tag &ltlabel&gt</h2>
+<p>Tag &ltlabel> digunakan untuk memberi label, keterangan atau judul pada sebuah field. Tag &ltlabel> disarankan menggunakan atribut for yang fungsinya jika teks label tersebut di-klik maka kursor akan mengarah ke field tujuan. Agar label dan field terhubung maka pada field harus menggunakan atribut id dengan value atau isi yang sama dengan atribut for. Contoh:</p>
+  <figure>
+    <img src="gambar/form-8.png">
+  </figure>
+</article>
+
+
+<article>
+<h2 id="legen">Tag &ltfieldset&gt dan &ltlegend&gt</h2>
+<p>Tag &ltfieldset> digunakan untuk mengelompokkan field yang saling terkait, misalnya fieldset tentang alamat berisikan field jalan, kecamatan, kabupaten dan provinsi. Tag &ltlegend> digunakan untuk memperjelas tampilan tentang informasi dr fieldset yang dibuat. Simak Contoh berikut ini :</p>
+  <figure>
+    <img src="gambar/form-9.png">
+  </figure>
+</article>
+
+<article>
+<h2 id="video">Materi Video</h2>
+<figure>
+	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/zMgDXDfWIDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	</iframe></center>
+</figure>
+</article>
+
+</section>
+
+<footer>
+  <p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Modul HTML</title>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) ,url("assets/img/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  overflow: hidden;
+}
+button{
+  position: relative;
+  height: 60px;
+  width: 200px;
+  margin: 0 35px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+button:hover{
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+button:hover{
+  background: linear-gradient(90deg, #190684, #51b6f9, #18d8b8, #3a66f6);
+  background-size: 400%;
+}
+button:first-child:before,
+button:last-child:before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+button:first-child:hover:before,
+button:last-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+button:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="buttons">
+      <button onclick="window.location='modul-1.html';">1. Pengenalan HTML</button>
+      <button onclick="window.location='modul-2.html';">2. Tag, Elemen, Atribut</button>
+      <button onclick="window.location='modul-3.html';">3. Paragraf</button>
+    </div>
+    <div class="buttons">
+      <button onclick="window.location='modul-4.html';">4. Heading</button>
+      <button onclick="window.location='modul-5.html';"> 5. Komentar</button>
+      <button onclick="window.location='modul-6.html';">6. Teks Format & Link</button>
+    </div>
+    <div class="buttons">
+      <button onclick="window.location='modul-7.html';">7. Image</button>
+      <button onclick="window.location='modul-8.html';">8. List & Tabel</button>
+      <button onclick="window.location='modul-9.html';">9. Form</button>
+    </div>
+    <div class="buttons">
+      <button onclick="window.location='modul-10.html';">10. Elemen Semantik</button>
+      <button onclick="window.location='modul-11.html';">11. Audio Video</button>
+      
+</body>
+</html>

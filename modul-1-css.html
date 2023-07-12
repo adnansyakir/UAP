@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Modul 1</title>
+<meta charset="utf-8">
+<style>
+body {
+    font-family:Verdana,sans-serif;font-size:0.8em;
+}
+header,footer,section,article {
+    border:1px solid grey;
+    margin:5px;margin-bottom:15px;padding:8px;
+    background-color:white;
+}
+header,footer {
+    color:white;background-color:#444;margin-bottom:5px;
+}
+section {
+    background-color:#ddd;
+}
+nav ul {
+    margin:0;padding:0;
+}
+nav ul li {
+    display:inline; margin:5px;
+}
+</style>
+<body>
+
+<header>
+  <h1 align="right">Modul 1 | Pengenalan CSS</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#apa">Apa itu CSS</a></li>
+    <li><a href="#sejarah">Sejarah CSS</a></li>
+    <li><a href="#versi">Versi CSS</a></li>
+    <li><a href="#tulis">Penulisan CSS</a></li>
+    <li><a href="#cara">Cara Memanggil CSS</a></li>
+    <li><a href="#video">Materi Video</a></li>
+    <li><a href="../daftar-modul.html">Daftar Modul</a></li>
+    <li><a href="../../sub-materi/teori.html">Kembali</a></li>
+  </ul>
+</nav>
+
+<section>
+<h2>C S S</h2>
+
+<article>
+  <h2 id="apa">Apa itu CSS??</h2>
+	<p>CSS kepanjangan dari Cascading Style Sheet yang merupakan bagian dari design website, dengan CSS anda bisa merubah atau memberikan style halaman website menjadi lebih menarik.</p>
+  <p>CSS sendiri dikembangkan oleh komunitas internasional yang disebut W3C atau kepanjangan dari World Wide Web Consortium, yang merupakan komunitas seluruh dunia yang bergabung untuk berkontribusi memberi masukan, menulis dan mengembangan spesifikasi dari CSS untuk mendefinisikan standar bahasa CSS. Akan tetapi CSS bukan merupakan bahasa pemograman.	</p>
+</article>
+
+<article>
+<h2 id="sejarah">Sejarah CSS</h2>
+  <p>Nama CSS didapat dari fakta bahwa setiap deklarasi style yang berbeda dapat diletakkan secara berurutan, yang kemudian membentuk hubungan ibu-anak (parent-child) pada setiap style. CSS sendiri merupakan sebuah teknologi internet yang direkomendasikan oleh World Wide Web Consortium atau W3C pada tahun1996. </p>
+  <p>Setelah CSS distandardisasikan, Internet Explorer dan Netscape melepas browser terbaru mereka yang telah sesuai atau paling tidak hampir mendekati dengan standar CSS.</p>
+</article>
+
+<article>
+<h2 id="versi">Versi CSS</h2>
+  <p>Untuk saat ini terdapat tiga versi CSS, yaitu CSS1, CSS2, dan CSS3. CSS1 dikembangkan berpusat pada pemformatan dokumen HTML, CSS2 dikembangkan untuk memenuhi kebutuhan terhadap format dokumen agar bisa ditampilkan di printer, sedangkan CSS3 adalah versi terbaru dari CSS yang mampu melakukan banyak hal dalam desain website.</p>
+  <p>CSS3 mendukung penentuan posisi konten, downloadable, huruf font, tampilan pada tabel / table layout dan media tipe untuk printer. Kehadiran versi CSS yang ketiga diharapkan lebih baik dari versi pertama dan kedua.</p>
+  <p>CSS3 juga dapat melakukan animasi pada halaman website, di antaranya animasi warna hingga animasi 3D. Dengan CSS3 desainer lebih dimudahkan dalam hal kompatibilitas websitenya pada smartphone dengan dukungan fitur baru yakni media query. Selain itu, banyak fitur baru pada CSS3 seperti: multiple background, border-radius, drop-shadow, border-image, CSS Math, dan CSS Object Model.</p>
+</article>
+
+<article>
+<h2 id="tulis">Penulisan Syntax CSS</h2>
+  <p>Untuk memulai atau mencoba memberikan CSS pada HTML, Kita belajar tentang syntax dasar terlebih dahulu pada CSS. Berikut contoh gambaran syntax dasar atau mendeklarasikan CSS:</p>
+	<figure>
+   <img src="gambar/dasar-css-1.png"> 
+  </figure>
+  <p>
+    <ul>
+      <li>Selector untuk menunjuk ke elemen HTML yang ingin Anda beri CSS</li>
+      <li>Property untuk memberikan atau menentukan tipe style pada CSS</li>
+      <li>Value untuk memberikan nilai pada PROPERTY itu sendiri</li>
+    </ul>
+    Blok deklarasi berisi satu atau lebih deklarasi yang dipisahkan oleh titik koma. Setiap deklarasi menyertakan nama property CSS dan nilai, dipisahkan oleh titik dua. Deklarasi CSS selalu diakhiri dengan tanda titik koma, dan blok deklarasi dikelilingi oleh kurung kurawal. Selector bisa menunjukan nama elemen HTML langsung, atau menggunakan atribut id mau pun class agar lebih spesifik.
+  </p>
+
+  <h3>Selector CSS</h3>
+  <p>Ada lima jenis selector dalam CSS, yaitu:</p>
+  <ol type="1">
+    <li><strong>Selector sederhana (simple)</strong>, yaitu memilih element, id atau class.</li>
+    <li><strong>Selector kombinasi (combinator)</strong>, yaitu memilih element berdasarkan suatu elemen yang berhubungan dengannya. Misal: memilih elemen html yang ada di dalam elemen lain.</li>
+    <li><strong>Selector pseudo-class</strong>, yaitu untuk memberi efek dari suatu aksi. Misal: setelah cursor didekatkan, setelah di klik.</li>
+    <li><strong>Selector pseudo-elements</strong>, yaitu untuk memberi style dari bagian spesifik suatu element. Misal: baris tabel yang ganjil.</li>
+    <li><strong>Selector atribut</strong>, yaitu memberi style berdasar atribut HTML yang digunakan.</li>
+  </ol>
+
+  <h3>1. Selector Sederhana (Simple)</h3>
+  <details>
+    <figure>
+      <img src="gambar/dasar-css-2.jpg">
+    </figure>
+    <h4> Selector Id dan Class</h4>
+      <figure>
+        <img src="gambar/dasar-css-3.jpg">
+      </figure>
+    <h4>Universal Selector</h4>
+      <figure>
+        <img src="gambar/dasar-css-4.jpg">
+      </figure>
+    <h4>Grouping Selector</h4>
+      <figure>
+        <img src="gambar/dasar-css-5.jpg">
+      </figure>
+  </details>
+
+  <h3>2. Selector Kombinasi (Combinator)</h3>
+  <details>
+    <h4>Descandant Selector</h4>
+      <figure>
+        <img src="gambar/dasar-css-6.jpg">
+      </figure>
+    <h4>Child Selector</h4>
+      <figure>
+        <img src="gambar/dasar-css-7.jpg">
+      </figure>
+    <h4>Adjacent Sibling Selector</h4>
+      <figure>
+        <img src="gambar/dasar-css-8.jpg">
+      </figure>
+    <h4>General Sibling Selector</h4>
+      <figure>
+        <img src="gambar/dasar-css-9.jpg">
+      </figure>
+  </details>
+
+  <h3>3. Selector Pseudo-Class</h3>
+  <details>
+    <figure>
+      <img src="gambar/dasar-css-10.jpg">
+    </figure>
+  </details>
+
+  <h3>4. Selector Pseudo-Elements</h3>
+  <details>
+    <figure>
+      <img src="gambar/dasar-css-11.jpg">
+    </figure>
+  </details>
+
+  <h3>5. Selector Atribut</h3>
+  <details>
+     <p>Terakhir adalah atribut selektor, artinya adalah selektor ini memilih elemen berdasar atribut dan nilainya. Perhatikan Contoh berikut :</p>
+    <figure>
+      <img src="gambar/dasar-css-12.jpg">
+    </figure>
+    <p>Tabel Selector Atribut</p>
+    <figure>
+      <img src="gambar/dasar-css-13.jpg">
+    </figure>
+  </details>
+</article>
+
+<article>
+<h2 id="cara">Cara Memanggil CSS</h2>
+<p>Untuk menggunakan CSS itu sendiri, Anda harus memanggilnya terlebih dahulu. Secara umum pemanggilan CSS biasanya ada 3 cara. yaitu: External, Internal dan Inline. External yang berarti mengambil diluar atau memisahkan file html dan css, internal berarti Anda mencampurkan tag HTML dengan CSS, dan inline yang berarti Anda memberikan gaya sebaris dengan cara memasukan CSS pada tag HTML secara langsung.</p>
+<h3>Metode Inline</h3>
+<details>
+  <figure>
+    <img src="gambar/dasar-css-14.jpg">
+  </figure>
+</details>
+
+<h3>Metode Internal</h3>
+<p>Kedua adalah internal, cara penulisanya yaitu kode CSS ditaruh di antara kode &lthead> dan &lt/head>.
+Kemudian, selector CSS ditaruh diantara tag &ltstyle type="text/css"> dan &lt/stye>.</p>
+<details>
+  <figure>
+    <img src="gambar/dasar-css-15.jpg">
+  </figure>
+</details>
+
+<h3>Metode Eksternal</h3>
+<p>Memanggil dengan metode external berarti kita memisahkan file CSS itu sendiri. Metode ini paling sering digunakan dan sangat direkomentasikan karena memisahkan file HTML dan file CSS. Metode ini sangat bagus jika kasusnya script kita sudah banyak.
+</p>
+<details>
+  <figure>
+    <img src="gambar/dasar-css-16.jpg">
+  </figure>
+</details>
+</article>
+
+<article>
+<h2 id="video">Materi Video</h2>
+<figure>
+	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/qPflQDcua44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	</iframe></center>
+</figure>
+</article>
+
+</section>
+
+<footer>
+  <p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

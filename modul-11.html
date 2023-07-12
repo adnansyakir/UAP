@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Modul 11</title>
+	<meta charset="utf-8">
+	<style>
+		body {font-family: Verdana, sans-serif; font-size:0.8em;}
+		header, section, article, footer, div.city, div.country
+		{border:1px solid grey; margin-bottom:15px; padding:8px;background-color:white;}
+		header,footer {color:white;background-color:#444;margin-bottom:5px;}
+		section {background-color:#ddd;}
+		nav ul {margin:0; padding:0;}
+		nav ul li {display:inline; margin:5px;}
+	</style>
+</head>
+
+<body>
+	<header>
+  		<h1 align="right">Modul 11 | Audio dan Video</h1>
+	</header>
+<nav>
+	<ul>
+  		<li><a href="#audio">Audio</a></li>
+  		<li><a href="#vid">Video</a></li>
+  		<li><a href="#video">Materi Video</a></li>
+  		<li><a href="../daftar-modul.html">Daftar Modul</a></li>
+  		<li><a href="../../sub-materi/teori.html">Kembali</a></li>
+	</ul>
+</nav>
+
+<article>
+
+	<section>
+		<h2 id="audio">A U D I O</h2>
+		<div class="city">
+			<h2>Pendahuluan</h2>
+			<p>Konten dalam web, tidak hanya dalam bentuk teks dan gambar saja. Tapi juga bisa dalam bentuk multimedia seperti audio dan video. Kita akan fokus membahas tentang audio di HTML. Konten audio biasanya berbentuk podcast, audiobook, dan musik.</p>
+		</div>
+
+		<div class="city">
+			<h2>Cara Menambahkan Audio di HTML</h2>
+			<p>Sebelum adanya HTML 5, audio di HTML ditambahkan dengan program eksternal seperti flash player. Namun, kini HTML sudah punya tag sendiri yakni &ltaudio>. Tag &ltaudio> adalah tag untuk membuat audio player. Lalu kita bisa memberikan file audio yang akan diputar dengan tag &ltsource>.</p>
+			<figure>
+				<img src="gambar/audio-1.png">
+			</figure>
+		</div>
+
+		<div class="city">
+			<h2>Format File Audio yang didukung</h2>
+			<p>Audio player di HTML tidak mendukung semua jenis format file audio. Berikut ini daftar format file audio yang bisa diputar di HTML.</p>
+			<figure>
+				<img src="gambar/audio-2.png">
+			</figure>
+			<p>Format file yang biasanya digunakan adalah MP3 dan MP4 (M4A), karena ukuran filenya relatif kecil. Sementara format FLAC adalah format file audio dengan kualitas tinggi dan ukuran filenya relatif lebih besar.</p>
+		</div>
+
+		<div class="city">
+			<h2>Atribut utk Tag &ltaudio></h2>
+			<p>Tag &ltaudio> punya beberapa atribut yang sering digunakan:</p>
+			<figure>
+				<img src="gambar/audio-3.png">
+			</figure>
+		</div>
+	</section>
+
+	<section>
+	<h2 id="vid">V I D E O</h2>
+		<div class="country">
+			<h2>Pendahuluan</h2>
+			<p>Konten dalam web, tidak hanya dalam bentuk teks dan gambar saja. Tapi juga bisa dalam bentuk multimedia seperti audio dan video. Kita akan fokus membahas tentang video di HTML. Kita membutuhkan sebuah media player untuk menampilkan video di HTML. Sebelum ada HTML 5, media player di HTML dibuat dengan program eksternal seperti adobe flash. Namun, kini sudah tidak dipakai lagi.</p>
+			<figure>
+				<img src="gambar/video-1.png">
+			</figure>
+			<p>HTML sekarang punya tag baru untuk membuat media player, yakni tag &ltvideo>.</p>
+		</div>
+
+		<div class="country">
+			<h2>Cara Menambahkan Video di HTML</h2>
+			<figure>
+				<img src="gambar/video-2.png">
+			</figure>
+			<p>Jika tag video di buka pada browser yang tidak mendukungnya, maka teks browser tidak mendukung tag video akan ditampilkan. Jika mendukung maka videonya akan ditampilkan. Contoh:</p>
+			<details>
+				<figure>
+					<img src="gambar/video-3.png">
+				</figure>
+			</details>	
+			<p>Pada contoh di atas, kita menuliskan secara langsung nama video yang akan ditampilkan. Ini karena videonya berada dalam satu folder dengan file HTML.</p>
+			<p>Jika video tersebut tersimpan di folder yang berbeda, maka perlu ditulis alamat folder atau path-nya.</p>
+			<p>jika videonya berada di website yang berbeda, maka kita harus mengisi atribut src dengan URL lengkap dari video.</p>
+		</div>
+
+		<div class="country">
+			<h2>Format Video yang Didukung</h2>
+			<p>Tidak semua format video dapat ditampilkan di HTML. Berikut ini beberapa format video yang didukung:</p>
+			<figure>
+				<img src="gambar/video-4.png">
+			</figure>
+		</div>
+
+		<div class="country">
+			<h2>Atribut untuk Video</h2>
+			<p>Tag &ltvideo> punya beberapa atribut yang bisa diberikan:</p>
+				<figure>
+					<img src="gambar/video-5.png">
+				</figure>
+			<p>Jika atribut bernilai true, maka ia boleh ditulis namanya saja. Jika nilai atribut bernilai false, maka atribut tersebut boleh tidak ditulis atau juga boleh ditulis.</p>
+		</div>
+
+		<div class="country">
+			<h2>Menambahkan Video dr Youtube</h2>
+			<p>Saat tidak ingin repot-repot mengubah format video, kita bisa manfaatkan Youtube. Tinggal upload saja videonya ke Youtube. Nanti kita akan dapat id unik dari video. Id unik ini bisa kita dapatkan dari URL video. Contoh: 7udpkxQh5qY</p>
+			<p>Youtube sendiri sudah punya media player, jadi kita tidak pelu membuatnya dengan tag &ltvideo>. Tag yang kita butuhkan untuk menambahkan video dari Youtube adalah &ltiframe>. Tag ini sebenarnya berfungsi untuk menambahkan halaman lain dalam sebuah frame.</p>
+			<p>Contoh :</p>
+				<figure>
+					<img src="gambar/video-6.png">
+				</figure>
+			<p>Ada cara lain untuk menambahkan video dari Youtube. Kita akan memanfaatkan fasilitas yang sdh diberikan Youtube yaitu fitur "Share" atau "Bagikan".</p>
+				<figure>
+					<img src="gambar/video-7.png">
+				</figure>
+			<p>Maka akan muncul opsi untuk share video, pilih saja "Embed" atau "Sematkan"</p>
+				<figure>
+					<img src="gambar/video-8.png">
+				</figure>
+			<p>Lalu tinggal kita salin atau copy code HTML-nya.</p>
+				<figure>
+					<img src="gambar/video-9.png">
+				</figure>						
+		</div>
+	</section>
+
+	<section>
+	<a name="video">&nbsp;</a>
+	<h2>Materi Video</h2>
+		<div class="country">
+			<figure>
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/zzh2Rz4XhkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			</figure>
+		</div>
+	</section>
+</article>
+
+<footer>
+	<p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

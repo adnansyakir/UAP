@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Modul 6</title>
+	<meta charset="utf-8">
+	<style>
+		body {font-family: Verdana, sans-serif; font-size:0.8em;}
+		header, section, article, footer, div.city, div.country
+		{border:1px solid grey; margin-bottom:15px; padding:8px;background-color:white;}
+		header,footer {color:white;background-color:#444;margin-bottom:5px;}
+		section {background-color:#ddd;}
+		nav ul {margin:0; padding:0;}
+		nav ul li {display:inline; margin:5px;}
+	</style>
+</head>
+
+<body>
+	<header>
+  		<h1 align="right">Modul 6 | Teks Formatting dan Link</h1>
+	</header>
+<nav>
+	<ul>
+  		<li><a href="#teks">Teks Formatting</a></li>
+  		<li><a href="#link">Link</a></li>
+  		<li><a href="#video">Materi Video</a></li>
+  		<li><a href="../daftar-modul.html">Daftar Modul</a></li>
+  		<li><a href="../../sub-materi/teori.html">Kembali</a></li>
+	</ul>
+</nav>
+
+<article>
+
+	<section>
+		<a name="teks">&nbsp;</a>
+		<h2>TEKS FORMATTING</h2>
+		<div class="city">
+			<h2>Pendahuluan</h2>
+			<p>Pemformatan teks yang dibahas adalah membuat teks tebal, miring, garis bawah, coret dan penggunaan sup atau sub pada penulisan persamaan matematika. Format teks tersebut sering digunakan dalam penulisan artikel sehari-hari.</p>
+		</div>
+
+		<div class="city">
+			<h2>Teks Tebal</h2>
+			<p>Untuk untuk menebalkan teks pada HTML dapat menggunakan tag <strong>&ltb&gt</strong> atau tag <strong>&ltstrong&gt</strong>. Kedua tag tersebut menghasilkan tampilan yang sama yaitu huruf yang ada di dalam tag tersebut menjadi tebal namun penggunaan keduanya berbeda. Lalu apa perbedaannya?</p>
+			<details>
+				<p>Perbedaan antara keduanya terdapat pada fungsinya yaitu tag <strong>&ltb&gt</strong> dari kata bold digunakan untuk sekedar membuat huruf tebal saja, </p><p>sedangkan tag <strong>&ltstrong&gt</strong> digunakan untuk menunjukkan bahwa teks atau huruf tersebut lebih penting dari yang lainnya.</p>
+			</details>
+			<p>Mari kita lihat contoh berikut ini.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/format-teks-1.png">
+  			  </figure>
+  			</details>
+		</div>
+
+		<div class="city">
+			<h2>Teks Miring</h2>
+			<p>Untuk membuat tulisan atau teks miring pada HTML bisa menggunakan tag <strong>&lti&gt</strong> atau tag <strong>&ltem&gt</strong>. Seperti 2 tag sebelumnya, kedua tag ini juga memiliki tampilan yang sama namun terdapat perbedaan dalam penggunaannya.</p>
+			<details>
+				<p>Kedua tag ini memiliki perbedaan pada fungsi yaitu tag <strong>&lti&gt</strong> yang merupakan singkatan dari italic digunakan dengan tujuan untuk mencetak tuisan miring saja tanpa ada maksud di dalamnya. Sedangkan tag <strong>&ltem&gt</strong> dari kata emphasis digunakan untuk penekanan terhadap teks yang tertentu (stress emphasis).</p>
+			</details>
+			<p>Mari kita lihat contoh berikut ini.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/format-teks-2.png">
+  			  </figure>
+  			</details>
+		</div>
+
+		<div class="city">
+			<h2>Teks Garis Bawah</h2>
+			<p>Kita bisa menggunakan tag <strong>&ltu></strong> ataupun tag <strong>&ltins></strong> untuk membuat tulisan garis bawah pada HTML. Secara tampilan kedua tag tersebut menghasilkan tampilan yang sama. Namun sebenarnya terdapat perbedaan dalam penggunaannya.</p>
+			<details>
+				<p>Tag <strong>&ltu></strong> dari kata underline digunakan untuk mencetak huruf atau teks dengan garis bawah tanpa ada maksud lainnya. Hal tersebut sama dengan tag <strong>&ltb></strong> dan <strong>&lti></strong> yang hanya bertujuan pada visual. Sedangkan tag <strong>&ltins></strong> dari kata insert digunakan untuk membuat huruf atau teks dengan garis bawah dengan tujuan menunjukkan bahwa teks tersebut baru saja ditambahkan.</p>
+			</details>
+			<p>Mari kita lihat contoh berikut ini.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/format-teks-3.png">
+  			  </figure>
+  			</details>
+		</div>
+
+		<div class="city">
+			<h2>Teks Tercoret</h2>
+			<p>Untuk membuat huruf yang dicoret di HTML dapat menggunakan tag <strong>&lts></strong> ataupun tag <strong>&ltdel></strong>. Persamaan kedua tag tersebut adalah pada tampilannya yang sama-sama menghasilkan teks tercoret. Lalu apa perbedaannya?</p>
+			<details>
+				<p>Tag <strong>&lts></strong> dari kata strikethrough hanya digunakan untuk mencetak huruf yang dicoret secara visual tanpa tujuan tertentu. Sedangkan tag <strong>&ltdel></strong> dari kata delete berfungsi mendefinisikan bahwa teks tersebut sudah tidak berlaku lagi.</p>
+			</details>
+			<p>Mari kita lihat contoh berikut ini.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/format-teks-4.png">
+  			  </figure>
+  			</details>
+		</div>
+
+		<div class="city">
+			<h2>Teks Pangkat</h2>
+			<p>Persamaan dan rumus matematika atau kimia memiliki pangkat atas dan bawah. Untuk menulisnya pada HTML dapat menggunakan tag <strong>&ltsup></strong> atau tag <strong>&ltsub></strong>.
+			<p>Tag <strong>&ltsup></strong> dari kata superscript digunakan untuk membuat pangkat kecil yang berada di atas.</p> 
+			<p>Tag <strong>&ltsub></strong> dari kata Subscript digunakan untuk membuat pangkat kecil yang berada di bawah.</p>
+			<p>Mari kita lihat contoh berikut ini.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/format-teks-5.png">
+  			  </figure>
+  			</details>
+		</div>
+
+		<div class="city">
+			<h2>Teks Efek Marker</h2>
+			<p>Marker bisanya digunakan untuk menandai teks yang penting atau kata kunci yang penting. Marker di HTML dapat kita buat dengan tag <strong>&ltmark></strong>.</p>
+			<details>
+			  <figure>
+  				<img src="gambar/format-teks-6.png">
+  			  </figure>
+  			</details>
+		</div>
+
+		<div class="city">
+			<h2>Teks Formatting utk Komputer</h2>
+			<p>Selain dari teks formatting di atas, ada juga teks formatting yang khusus untuk menandai teks yang berasal dari komputer. Berikut ini beberapa tag yang digunakan untuk memformat teks dari komputer:</p>
+			<ul>
+				<li><strong>&ltcode></strong> untuk menandai bagian dari kode program;</li>
+				<li><strong>&ltsamp></strong> untuk menandai output dari program komputer;</li>
+				<li><strong>&ltkbd></strong> untuk menandai tombol keyboard;</li>
+				<li><strong>&ltvar></strong> untuk menandai sebuah variabel;</li>
+				<li><strong>&ltpre></strong> untuk preformatting teks.</li>
+			</ul>
+			<details>
+			  <figure>
+  				<img src="gambar/format-teks-7.png">
+  			  </figure>
+  			</details>
+		</div>
+	</section>
+
+	<section>
+	<a name="link">&nbsp;</a>
+	<h2>LINK</h2>
+		<div class="country">
+			<h2>Pengertian</h2>
+			<p>Link atau Hyperlink adalah elemen HTML yang berfungsi menghubungkan suatu halaman web ke halaman web yang lain. Elemen ini bisa diklik.. dan nanti akan membuka halaman lain sesui alamat URL yang diberikan. Tidak hanya untuk menghubungkan halaman, link juga punya fungsi lain seperti scroll top, download file, menjalankan fungsi javascript, dll.</p>
+			<figure>
+				<center><img src="gambar/link-1.png"></center>
+			</figure>
+		</div>
+
+		<div class="country">
+			<h2>Cara Membuat Link</h2>
+			<h3>Struktur Tag utk Link</h3>
+			<figure>
+				<img src="gambar/link-2.png">
+			</figure>
+			<h3>Contoh Kode</h3>
+			<figure>
+				<img src="gambar/link-3.png">
+			</figure>		
+		</div>
+
+		<div class="country">
+			<h2>Jenis Link</h2>
+			<h3>1. Internal Link</h3>
+			<p>Internal Link adalah link yang menuju ke domain atau halaman web itu sendiri.</p>
+			<details>
+			<figure>
+				<img src="gambar/link-4.png">
+			</figure>
+			</details>
+			<h3>2. Eksternal Link</h3>
+			<p>External Link: adalah link yang menuju domain lain.</p>
+			<details>
+			<figure>
+				<img src="gambar/link-5.png">
+			</figure>
+			</details>
+		</div>
+
+		<div class="country">
+			<h2>Atribut Link</h2>
+			<h3>1. href</h3>
+			<p>Atribut href adalah atribut yang digunakan untuk menentukan alamat yang akan dituju pada sebuah link. Atribut ini harus ada jika kita ingin membuat link.</p>
+			<ul>
+				<li>Membuat Link menuju Alamat Absolut</li>
+				<details>
+					<p>Alamat absolute adalah alamat yang lengkap mulai dari protokol yang digunakan ( http:// atau https:// ), nama domain, dan dilengkapi dengan alamat halaman atau file yang dituju, misalnya: https://mi.polinela.ac.id</p>
+				</details>
+				<li>Membuat Link menuju Alamat Relatif</li>
+				<details>
+					<p>Alamat relatif adalah alamat yang hanya menunjukkan nama file dan direktorinya. Berbeda dengan absolute, alamat relatif tidak perlu memasukkan protokol dan nama domain.</p>
+				</details>
+				<li>Membuat Link dalam satu halaman</li>
+				<details>
+					<p>Link HTML dalam satu halaman dapat dibuat dengan menambahkan atribut id pada elemen HTML yang dituju lalu id tersebut ditulis pada atribut href link HTML. Penulisan pada atribut href didahului dengan tanda pagar #. Link jika di-klik akan menuju elemen tersebut tanpa pindah halaman.</p>
+				</details>
+				<li>Membuat Link ke protokol lain</li>
+				<details>
+					<p>Selain http dan https, kita juga bisa membuat link dengan tujuan protokol lainnya seperti email, ftp, dan lainnya. Berikut ini cara membuat link email pada HTML</p>
+					<p><strong><code style="font-size: 18px;">&lta href="mailto:alamatemail@domain.com?Subject=Halo%20bro"&gtKirim email!&lt/a&gt</code></strong>Kode di atas jika di-klik akan membuka aplikasi e-mail client yang ada pada komputer anda untuk mengirimkan email dengan subjek “Halo bro” ke alamatemail@domain.com.</p>
+				</details>
+			</ul>
+
+			<h3>2. target</h3>
+			<p>Atribut ini berfungsi untuk menentukan target dari pembukaan link.</p> 
+			<p>Ada beberapa target yang biasanya digunakan:</p>
+			<ul>
+				<li><strong> _blank</strong> akan membuka link pada jendela atau tab baru;</li>
+				<li><strong> _self</strong> akan membuka link pada halaman itu sendiri (default target);</li>
+				<li><strong> _top</strong> menuju bagian paling atas pada halaman;</li>
+				<li><strong> _parent</strong> membuka link pada frame induk;</li>
+				<li>nama-frame akan membuka link pada <strong>&ltiframe></strong> dengan nama tertentu;</li>
+			</ul>
+
+			<h3>3. rel</h3>
+			<p>Atribut rel berfungsi untuk menentukan hubungan halaman yang menjadi tujuan dari link tersebut. Berikut ini value yang penting untuk diketahui dan paling sering digunakan:</p> 
+			<ol>
+				<li><p><b>rel=”nofollow”</b> menunjukkan bahwa link tersebut tidak kita dukung atau tidak memiliki hubungan dengan website kita. Nofollow memberi info kepada search engine seperti Google bahwa link tersebut tidak perlu diikuti. Dalam SEO ini dilakukan jika kita tidak ingin menambahkan poin plus kepada website tersebut dimata Google.</p></li>
+				<li><p><b>rel=”sponsored”</b> menunjukkan bahwa link tersebut adalah link sponsor. Value ini adalah value baru dari Google yang diperkenalkan pada akhir tahun 2019.</p></li>
+				<li><p><b>rel=”ugc”</b> menujukkan bahwa link tersebut adalah link yang dibuat oleh user. Ini sangat cocok untuk website yang berbentuk forum di mana konten dibuat oleh user.</p></li>
+				<li><p><b>rel=”noreferrer”</b> digunakan untuk melarang web browser mengirimkan header referrer.</p></li>
+				<li><p><b>rel=”noopener”</b> digunakan untuk mencegah penggunaan windows opener. Ini digunakan untuk meningkatkan keamanan website. noopener dan noreferrer sebaiknya digunakan saat membuat link dengan target _blank atau link yang dibuka pada tab baru.</p></li>
+			</ol>
+
+			<h3>4. title</h3>
+			<p>Atribut ini berfungsi untuk membuat tooltips. Tooltips adalah informasi tambahan yang akan tampil saat link disentuh pointer atau saat kita menahan tap di hp.</p> 
+
+		</div>
+
+	</section>
+
+	<section>
+	<a name="video">&nbsp;</a>
+	<h2>Materi Video</h2>
+		<div class="country">
+			<figure>
+				<center><iframe width="560" height="315" src="https://www.youtube.com/embed/6Gr38QprWCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+			</figure>
+		</div>
+	</section>
+</article>
+
+<footer>
+	<p align="center">&copy; 2022 Tri Sandhika Jaya. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
